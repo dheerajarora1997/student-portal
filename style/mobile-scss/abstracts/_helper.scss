@@ -1,0 +1,59 @@
+.text-black {
+  color: $black;
+}
+
+.text-brand {
+  color: $anchor-color;
+}
+
+.text-base{
+  color: $base-color;
+}
+
+.text-truncate-2{
+  @extend  %text-truncate-2;
+}
+
+.font-medium {
+  font-weight: 600;
+}
+
+.content-none {
+
+  &:before,
+  &:after {
+    content: none;
+  }
+}
+
+.badge-notify {
+  @extend .position-absolute;
+  @extend .text-white;
+  top: 4px;
+  right: 2px;
+  border-radius: 50%;
+  font-size: 9px;
+  text-align: center;
+  min-width: 15px;
+  min-height: 15px;
+  display: block;
+  line-height: 13px;
+  background: #ee4f57;
+}
+
+.raise-btn span{
+  line-height: 1;
+  font-size: 20px;
+}
+
+.text-decoration-underline {
+  text-decoration: underline;
+}
+
+.tooltip {
+  z-index: 999;
+}
+
+.flex-center{
+  @extend %flex-center;
+}

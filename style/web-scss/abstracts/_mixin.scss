@@ -1,0 +1,33 @@
+@mixin rotate($rotate) {
+  transform: rotate($rotate) !important;
+  -webkit-transform: rotate($rotate) !important;
+  -moz-transform: rotate($rotate);
+  -o-transform: rotate($rotate);
+  -ms-transform: rotate($rotate);
+}
+
+@mixin grid($grid-col, $row-gap, $col-gap) {
+  display: grid;
+  row-gap: $row-gap;
+  column-gap: $row-gap;
+  grid-template-columns: repeat($grid-col, minmax(0, 1fr));
+}
+
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%no-wrap {
+  white-space: nowrap;
+}
+
+%text-truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,108 @@
+input,
+textarea {
+  @extend .py-2;
+}
+
+select option {
+  @extend .px-0;
+}
+
+input,
+textarea,
+select {
+  @extend .px-0;
+  border-width: 0 0 1px 0 !important;
+  @extend .rounded-0;
+
+  &:focus {
+    border-color: rgb(118, 118, 118);
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.form-group {
+  @extend .mb-4;
+}
+
+.form-group label {
+  @extend .mb-1;
+}
+
+.dropdown {
+  a {
+    @extend .position-relative;
+
+    &[aria-expanded="true"]:before {
+      @extend .fa;
+      @extend .fa-caret-up;
+      @extend .position-absolute;
+      @extend .text-white;
+      bottom: -23px;
+      right: 7px;
+      font-size: 41px;
+      z-index: 1111;
+    }
+  }
+
+  .dropdown-menu {
+    min-width: 230px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    &.menu-right {
+      @extend .position-absolute;
+      left: auto;
+      right: 0;
+    }
+
+    &.notification-dropdown {
+      min-width: 280px;
+
+      li:hover {
+        background:#fafafa;
+
+      }
+
+      small {
+        line-height: 1.1;
+      }
+    }
+  }
+}
+
+.floating-input {
+  @extend .position-relative;
+
+  label {
+    @extend .position-absolute;
+    @extend .bg-white;
+    opacity: 0;
+    top: 9px;
+    left: 0;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -ms-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+  }
+
+  input,
+  select,
+  textarea {
+    position: relative;
+
+    &:not(:placeholder-shown)+label {
+      top: -13px;
+      font-size: 90%;
+      opacity: 1;
+    }
+  }
+}
+
+.fileBrowseCustom {
+  height: calc(1.5em + 0.75rem + 2px);
+
+}

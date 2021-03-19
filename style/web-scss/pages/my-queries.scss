@@ -1,0 +1,162 @@
+@import '../abstracts/variable';
+@import '../abstracts/mixin';
+
+.my-queries {
+    .queries-btn {
+        span {
+            white-space: nowrap;
+            line-height: 1.4;
+        }
+    }
+
+
+    table {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 10px;
+        background: #fafafa;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .125);
+
+        tr {
+            margin: 10px 0;
+            padding: 10px 0;
+
+            td {
+                padding-right: 0;
+                white-space: nowrap;
+                margin: 0;
+                border: none;
+                background-color: #fff;
+            }
+        }
+
+        thead {
+            tr {
+                box-shadow: 0 0 10px rgb(0, 0, 0, .125);
+                border-radius: 15px;
+                border: 10px solid #e6e6e6;
+                border-width: 0 10px 0 10px;
+
+                td {
+                    font-size: 90%;
+                    background: #e6e6e6;
+                    font-weight: 600;
+                }
+
+            }
+
+        }
+
+        tbody tr {
+            border: 11px solid #fafafa;
+
+            td {
+                &:first-child {
+                    border-radius: 20px 0 0 20px;
+                    overflow: hidden;
+                }
+
+                &:last-child {
+                    overflow: hidden;
+                    border-radius: 0 20px 20px 0;
+                }
+
+                .table-des {
+                    max-width: 290px;
+                    white-space: normal;
+                    @extend %text-truncate-2;
+                }
+
+                a {
+                    display: flex;
+                    justify-content: start;
+                    align-items: center;
+                }
+            }
+        }
+    }
+
+}
+
+.my-queries .mobile-queries-block {
+    display: none;
+}
+
+@media only screen and (max-width: 1025px) {
+
+    .my-queries .queries-btn span {
+        white-space: normal;
+    }
+
+    .my-queries table tbody tr td .table-des {
+        max-width: 150px;
+    }
+
+    .queries-block>div {
+        max-width: 995px;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            width: 4px;
+            height: 4px;
+        }
+
+        /* Track */
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+            -webkit-border-radius: 10px;
+            background: #fff;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.125);
+        }
+
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            background: #cacccd;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: #cacccd;
+        }
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    .wrapper {
+        .my-queries {
+            .mobile-queries-block {
+                display: block;
+            }
+
+            .web-queries-block {
+                display: none;
+            }
+
+            .raise-btn-container {
+                flex: 0 0 60%;
+                max-width: 60%;
+            }
+
+        }
+
+        &.active {
+
+            .my-queries {
+                .mobile-queries-block {
+                    display: none;
+                }
+
+                .web-queries-block {
+                    display: block;
+                }
+                .raise-btn-container {
+                    flex: 0 0 auto;
+                    max-width: 33%;
+                }
+
+            }
+
+        }
+    }
+}

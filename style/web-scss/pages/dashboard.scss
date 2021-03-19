@@ -1,0 +1,22 @@
+@import '../abstracts/variable';
+@import '../abstracts/variable-overwrite';
+@import '../abstracts/mixin';
+
+@import '../components/card';
+@import '../components/timeline';
+
+@import '../../../vendor/owl.carousel/src/scss/owl.carousel.scss';
+@import '../components/owl-carousal';
+
+
+.notification-card {
+    height: 100%;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1025px) {
+    .notification-card {
+        position: sticky;
+        top: 0;
+        height: auto;
+    }
+}

@@ -1,0 +1,16 @@
+.chat-modal {
+    .modal-dialog {
+        margin: 0;
+        padding: 0;
+
+        .modal-content {
+            border-radius: 0;
+            height: calc(100vh - 1px);
+            min-height: 99vh;
+            width: 100%;
+            .modal-body {
+                overflow-y: auto;
+              }
+        }
+    }
+}
