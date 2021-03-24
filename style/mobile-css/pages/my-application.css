@@ -154,39 +154,13 @@
 @media only screen and (max-width: 767px) {
   .inner-tab .nav-tabs {
     flex-wrap: nowrap;
-    min-width: 100vh;
   }
   .inner-tab .nav-tabs .nav-link {
     flex-wrap: nowrap;
   }
 }
 .inner-tab .tab-mob-wrap {
-  min-width: 100%;
-  width: 300px;
-  max-width: 100%;
   margin-bottom: 20px;
-  overflow: hidden;
-  overflow-x: scroll;
-  /* Track */
-  /* Handle */
-}
-.inner-tab .tab-mob-wrap::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-}
-.inner-tab .tab-mob-wrap::-webkit-scrollbar-track {
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  background: #fff;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.125);
-}
-.inner-tab .tab-mob-wrap::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: #cacccd;
-}
-.inner-tab .tab-mob-wrap::-webkit-scrollbar-thumb:hover {
-  background: #cacccd;
 }
 
 .cs-btn {

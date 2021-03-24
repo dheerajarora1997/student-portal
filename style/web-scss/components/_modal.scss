@@ -1,0 +1,21 @@
+.modal{
+    &.default-primary{
+        .modal-header{
+            background: var(--brand-primary);
+            color: var(--primary-text-color);
+            .close{
+                color: var(--primary-text-color);
+                &:hover{
+                    color: var(--primary-text-color);
+                }
+            }
+        }
+
+    }
+}
+
+.modal.verify-popup{
+    .modal-dialog{
+        max-width: 550px;
+    }
+}

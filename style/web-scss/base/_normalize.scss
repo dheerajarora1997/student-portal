@@ -1,9 +1,14 @@
 @import '../components/scroll-bar';
 @import '../components/cta';
 
+@import '../components/modal';
+
 * {
   padding: 0;
   margin: 0;
+  &:focus{
+    outline: none !important;
+  }
 }
 
 body {
@@ -24,6 +29,11 @@ body {
   }
   &text-color{
     color: var(--primary-text-color);
+    &:focus,
+    &:hover,
+    &:active{
+      color: var(--primary-text-color);
+    }
   }
 
   &bg {

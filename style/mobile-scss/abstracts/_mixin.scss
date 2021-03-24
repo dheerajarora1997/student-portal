@@ -6,6 +6,14 @@
   -ms-transform: rotate($rotate);
 }
 
+@mixin transition-ease($transition, $time) {
+  transition:   $transition $time  ease;
+  -webkit-transition:  $transition $time ease;
+  -moz-transition:  $transition $time ease;
+  -ms-transition:  $transition $time ease;
+  -o-transition:  $transition $time ease;
+}
+
 @mixin grid($grid-col, $row-gap, $col-gap) {
   display: grid;
   row-gap: $row-gap;

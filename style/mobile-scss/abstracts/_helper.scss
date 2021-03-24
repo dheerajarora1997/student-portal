@@ -22,7 +22,7 @@
 
   &:before,
   &:after {
-    content: none;
+    content: none !important;
   }
 }
 
@@ -56,4 +56,36 @@
 
 .flex-center{
   @extend %flex-center;
+}
+
+.bg-light-info {
+
+  &:active,
+  &.active {
+    background-color: #81b5ff !important;
+  }
+}
+
+.bg-light-warning {
+
+  &:active,
+  &.active {
+    background-color: #f8d587 !important;
+  }
+}
+
+.bg-light-success {
+
+  &:active,
+  &.active {
+    background-color: #9ee8c7 !important;
+  }
+}
+
+.bg-light-danger {
+
+  &:active,
+  &.active {
+    background-color: #f59eb6 !important;
+  }
 }

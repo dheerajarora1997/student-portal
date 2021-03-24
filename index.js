@@ -1,6 +1,7 @@
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
+    $('.selectpicker').selectpicker();
   });
 
 $( document ).ready(function() {

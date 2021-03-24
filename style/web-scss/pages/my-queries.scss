@@ -1,5 +1,12 @@
+@import '../abstracts/variable-overwrite';
 @import '../abstracts/variable';
 @import '../abstracts/mixin';
+
+
+@import '../components/card';
+
+
+
 
 .my-queries {
     .queries-btn {
@@ -122,6 +129,22 @@
     }
 }
 
+@media only screen and (max-width: 2200px) {
+    .wrapper {
+        .my-queries .label-grid  .queries-btn span span{
+            display: none;
+        }
+
+        &.active {
+            .my-queries .label-grid  .queries-btn span span{
+                display: inline-block;
+            }
+        }
+    }
+}
+
+
+
 @media only screen and (max-width: 769px) {
     .wrapper {
         .my-queries {
@@ -134,8 +157,8 @@
             }
 
             .raise-btn-container {
-                flex: 0 0 60%;
-                max-width: 60%;
+                flex: 0 0 40%;
+                max-width: 40%;
             }
 
         }
@@ -150,6 +173,7 @@
                 .web-queries-block {
                     display: block;
                 }
+
                 .raise-btn-container {
                     flex: 0 0 auto;
                     max-width: 33%;

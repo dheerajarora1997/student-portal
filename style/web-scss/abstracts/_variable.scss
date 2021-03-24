@@ -53,7 +53,7 @@ $base-color: hsl(0, 0%, 20%);
 
 $brand-light: hsl(var(--brand-hue), var(--brand-saturation), calc(var(--brand-light) + 1%));
 $brand-lighten: hsl(var(--brand-hue), var(--brand-saturation), calc(var(--brand-light) + 5%));
-$brand-lightest: hsl(var(--brand-hue), var(--brand-saturation), calc(var(--brand-light) + 10%));
+$brand-lightest: hsl(var(--brand-hue), var(--brand-saturation), calc(var(--brand-light) + 52%));
 
 
 $brand-sec-light: hsl($brand-hue, $brand-saturation, $brand-lightness + 25%);
@@ -130,6 +130,8 @@ $brand-light-55: hsl(var(--brand-hue), var(--brand-saturation), calc(var(--brand
 
 
 $fa : normal normal normal 14px/1 FontAwesome;
+
+$icon-font : normal normal normal 16px/1 iconFont;
 
 $btn-bg: hsl(205, 24%, 32%);
 $anchor-color: #0064b1;

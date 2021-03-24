@@ -31,3 +31,11 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+@mixin transition-ease($transition, $time) {
+  transition:   $transition $time  ease;
+  -webkit-transition:  $transition $time ease;
+  -moz-transition:  $transition $time ease;
+  -ms-transition:  $transition $time ease;
+  -o-transition:  $transition $time ease;
+}
