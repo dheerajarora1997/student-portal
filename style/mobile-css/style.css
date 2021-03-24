@@ -11063,6 +11063,10 @@ footer nav ul a, footer nav ul a:hover, header .hamburger-icon, .flex-center {
   overflow-y: auto;
 }
 
+.modal.verify-popup .modal-dialog .form-control {
+  font-size: 1.3rem;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -14390,6 +14394,11 @@ select:focus {
   box-shadow: none !important;
 }
 
+.field-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 label {
   font-size: 90%;
   color: #999;
@@ -14537,6 +14546,7 @@ label {
   margin-bottom: 0.5rem;
 }
 .dropdown.bootstrap-select .dropdown-menu .bs-searchbox input {
+  padding-right: 22px !important;
   border: 1px solid #dee2e6 !important;
 }
 .dropdown.bootstrap-select .dropdown-menu .bs-searchbox:after {

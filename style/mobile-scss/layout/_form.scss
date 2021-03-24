@@ -25,6 +25,11 @@ select {
   @extend .mb-4;
 }
 
+.field-disabled{
+  pointer-events: none;
+  opacity: .5;
+}
+
 label {
   @extend .mb-1;
   font-size: 90%;
@@ -223,6 +228,7 @@ label {
       input {
         @extend .bg-transparent;
         @extend .p-2;
+        padding-right: 22px !important;
         border: 1px solid #dee2e6 !important;
       }
 

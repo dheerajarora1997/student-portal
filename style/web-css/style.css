@@ -11147,6 +11147,9 @@ select.selectpicker {
 .modal.verify-popup .modal-dialog {
   max-width: 550px;
 }
+.modal.verify-popup .modal-dialog .form-control {
+  font-size: 1.5rem;
+}
 
 * {
   padding: 0;
@@ -14406,6 +14409,11 @@ select:disabled {
   opacity: 0.5;
 }
 
+.field-disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
 label {
   font-size: 90%;
   color: #999;
@@ -14552,10 +14560,14 @@ label {
 .dropdown.bootstrap-select .dropdown-toggle:focus {
   outline: none !important;
 }
+.dropdown.bootstrap-select .dropdown-menu {
+  max-width: 100%;
+}
 .dropdown.bootstrap-select .dropdown-menu .bs-searchbox {
   margin-bottom: 0.5rem;
 }
 .dropdown.bootstrap-select .dropdown-menu .bs-searchbox input {
+  padding-right: 22px !important;
   border: 1px solid #dee2e6 !important;
 }
 .dropdown.bootstrap-select .dropdown-menu .bs-searchbox:after {

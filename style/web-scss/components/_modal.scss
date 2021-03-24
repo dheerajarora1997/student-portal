@@ -17,5 +17,8 @@
 .modal.verify-popup{
     .modal-dialog{
         max-width: 550px;
+        .form-control{
+            font-size: 1.5rem;
+        }
     }
 }
