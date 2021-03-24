@@ -54,6 +54,9 @@ body {
   }
   &text-color{
     color: var(--secondary-text-color);
+    &:hover{
+      color: var(--secondary-text-color);
+    }
   }
 
   &bg {

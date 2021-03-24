@@ -528,29 +528,29 @@
                                 </a>
                             </div>
                             <div class="col-12">
-                                <form class="pt-3">
-                                    <div class="form-group floating-input">
+                                <form>
+                                    <div class="floating-input mb-3">
                                         <input type="text" class="form-control" id="student-name" placeholder="Name*">
                                         <label for="student-name">Name*</label>
                                         <small class="text-danger">Name is Required.</small>
                                     </div>
-                                    <div class="form-group floating-input">
-                                        <select id="query-cat" class="form-control">
-                                            <option value="">Admission</option>
-                                            <option value="">General</option>
-                                            <option value="">Technical</option>
-                                        </select>
+                                    <div class="relative mb-3">
                                         <label for="query-cat">Query Category*</label>
-                                    </div>
-                                    <div class="form-group floating-input">
-                                        <select id="select-form" class="form-control">
+                                        <select id="query-cat" class="form-control selectpicker" data-live-search="true">
                                             <option value="">Admission</option>
                                             <option value="">General</option>
                                             <option value="">Technical</option>
                                         </select>
-                                        <label for="select-form">Select Form*</label>
                                     </div>
-                                    <div class="form-group floating-input">
+                                    <div class="relative mb-3">
+                                        <label for="select-form">Select Form*</label>
+                                        <select id="select-form" class="form-control selectpicker" data-live-search="true">
+                                            <option value="">Admission</option>
+                                            <option value="">General</option>
+                                            <option value="">Technical</option>
+                                        </select>
+                                    </div>
+                                    <div class="floating-input mb-3">
                                         <textarea id="query-des" class="form-control"
                                             placeholder="Query's Description*"></textarea>
                                         <label for="query-des">Query's Description*</label>
@@ -559,7 +559,7 @@
                                     <div class="form-group fileBrowseCustom">
                                         <div class="input-group mb-3">
                                             <input type="text"
-                                                class="text-small form-control py-2 bg-transparent text-muted" readonly>
+                                                class="text-small form-control bg-transparent text-muted" readonly>
                                             <input type="file" class="sr-only" id="inputGroupFile03">
                                             <label for="inputGroupFile03"
                                                 class="btn px-4 ml-3 py-2 bg-secondary text-white">
@@ -585,6 +585,7 @@
     <script src="./vendor/bootstrap-js/popper.min.js"></script>
     <script src="./vendor/bootstrap-js/bootstrap.min.js"></script>
     <script src="./vendor/owl.carousel/dist/owl.carousel.js"></script>
+    <script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
     <script src="./index.js"></script>
 </body>
 

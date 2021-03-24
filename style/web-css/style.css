@@ -11054,7 +11054,7 @@ select.selectpicker {
 }
 
 .main-content .cont-rght-side-fixed {
-  z-index: 111119;
+  z-index: 9;
   position: relative;
   font-size: 90%;
 }
@@ -11129,7 +11129,7 @@ select.selectpicker {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 111111;
+  z-index: 8;
   display: none;
 }
 
@@ -11197,6 +11197,9 @@ h6 {
   color: var(--brand-secondary);
 }
 .secondary-text-color {
+  color: var(--secondary-text-color);
+}
+.secondary-text-color:hover {
   color: var(--secondary-text-color);
 }
 .secondary-bg {
@@ -14447,7 +14450,7 @@ label {
 }
 
 .floating-input {
-  padding-top: 26px;
+  padding-top: 20px;
 }
 .floating-input label {
   opacity: 0;
@@ -14479,6 +14482,9 @@ label {
 
 .fileBrowseCustom {
   height: calc(1.5em + 0.75rem + 2px);
+}
+.fileBrowseCustom input {
+  padding: 20px 0 !important;
 }
 
 .text-small {

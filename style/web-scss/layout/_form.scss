@@ -86,7 +86,7 @@ label {
 
 .floating-input {
   @extend .position-relative;
-  padding-top: 26px;
+  padding-top: 20px;
 
   label {
     @extend .position-absolute;
@@ -117,7 +117,9 @@ label {
 
 .fileBrowseCustom {
   height: calc(1.5em + 0.75rem + 2px);
-
+  input{
+    padding: 20px 0 !important;
+  }
 }
 
 .text-small {
