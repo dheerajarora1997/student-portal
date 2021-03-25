@@ -37,11 +37,6 @@ function customFile() {
 
 $( document ).ready(function() {
   $( ".fileBrowseCustom label" ).on( "click", customFile );
-});
-
-
-
-$(document).ready(function(){
   $('.owl-carousel').owlCarousel();
 });
 
@@ -74,4 +69,13 @@ $('.owl-carousel').owlCarousel({
       items: 4
     }
   },
+});
+
+// Remove spinner after 2 sec
+
+$(document).ready(function(){
+  setInterval(function(){
+    $('.spinner').addClass("d-none")
+  }, 2000);
+
 });

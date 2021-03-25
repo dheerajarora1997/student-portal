@@ -67,6 +67,14 @@
   grid-column: span 3/span 3;
 }
 
+.flex-center{
+  @extend %flex-center;
+}
+
+.gray-scroll{
+  @extend %gray-scroll;
+}
+
 .bg-light-info {
 
   &:active,

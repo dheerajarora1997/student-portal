@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="./style/web-css/style.css">
-    <link rel="stylesheet" href="./style/web-css/pages/my-queries.css">
+    <link rel="stylesheet" href="./style/web-css/pages/my-payments.css">
     <link rel="shortcut icon" type="image/jpg" href="./img/fav-icon.png" />
     <!-- <style>
         :root {
@@ -114,7 +114,7 @@
                             </a>
                         </li>
                         <li class="text-center w-100 d-block">
-                            <a href="./my-queries.html" class="active w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                            <a href="./my-queries.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
                                 <i class="icon-queries p-2" data-toggle="tooltip" data-placement="right"
                                     data-container="body" title="My Queries" aria-hidden="true"></i>
                                 <span class="ml-3">My Queries</span>
@@ -128,7 +128,7 @@
                             </a>
                         </li>
                         <li class="text-center w-100 d-block">
-                            <a href="./my-payments.html" class="w-100 d-flex align-items-center pl-2 pr-3 mb-1">
+                            <a href="./my-payments.html" class="active w-100 d-flex align-items-center pl-2 pr-3 mb-1">
                                 <i class="icon-payment p-2" data-toggle="tooltip" data-placement="right"
                                     data-container="body" title="My Payment" aria-hidden="true"></i>
                                 <span class="ml-3">My Payment</span>
@@ -150,7 +150,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="main my-queries">
+                <div class="main my-payments">
                     <!-- header -->
                     <header class="px-5">
                         <nav class="navbar align-items-center border-bottom px-0">
@@ -261,101 +261,58 @@
                         <section class="pt-3">
                             <div class="student-heading">
                                 <h1 class="font-medium h3">
-                                    My Queries
+                                    My Payments
                                 </h1>
-                                <div class="col-sm-12 col-md-11 col-lg-8 pl-0 pr-md-4">
-                                    <p class="mb-0">John, all the queries that you've raised with regards to your
-                                        admission at
-                                        <strong>{{CollegeName}}</strong> can be found below.
+                                <div class="col-md-12 col-lg-10 col-xl-8 pl-0 pr-xl-4">
+                                    <p class="mb-0">All the payments that you have made John towards your admission
+                                        process at
+                                        <strong>{{CollegeName}}</strong> are listed below.
                                     </p>
                                 </div>
                             </div>
                         </section>
                         <section>
                             <div class="label-grid pt-3 px-0 row align-items-center">
-                                <div class="col-3 col-md-4 col-lg-3 col-xl-2 raise-btn-container">
+                                <div class="col-4 col-lg-3 col-xl-2 raise-btn-container">
                                     <a href="javascript:void(0);"
                                         class="btn btn-outline-secondary w-100 text-black queries-btn px-lg-0 px-xl-3">
-                                        <i class="icon-queries mr-1" aria-hidden="true"></i>
+                                        <i class="icon-payment mr-1" aria-hidden="true"></i>
                                         <span class="d-block my-1">
-                                            Raise a
-                                            <span>Fresh</span>
-                                            Ticket
+                                            Raise Refund Request
                                         </span>
                                     </a>
                                 </div>
-                                <div class="col-9 col-md-8 col-lg-8 col-xl-8 pl-0 web-queries-block">
+                                <div class="col-8 col-lg-9 col-xl-8 pl-0 web-queries-block">
                                     <div class="row">
-                                        <div class="col-3 col-xl-2 pr-0">
-                                            <a href="javascript:void(0);" class="d-block bg-light-info text-base text-center p-2 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">40</span>
-                                                Total
+                                        <div class="col-3 col-md-5 col-lg-3 pr-0">
+                                            <a href="javascript:void(0);"
+                                                class="d-block bg-light-danger text-base text-center p-2 font-medium rounded-lg">
+                                                <span class="h4 d-block mb-0">20</span>
+                                                Total Payments
                                             </a>
                                         </div>
-                                        <div class="col-3 col-xl-2 pr-0">
-                                            <a href="javascript:void(0);" class="active d-block bg-light-warning text-base text-center p-2 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">12</span>
-                                                Open
-                                            </a>
-                                        </div>
-                                        <div class="col-3 col-xl-2 pr-0">
-                                            <a href="javascript:void(0);" class="d-block bg-light-success text-base text-center p-2 font-medium rounded-lg">
+                                        <div class="col-3 col-md-5 col-lg-3 pr-0">
+                                            <a href="javascript:void(0);"
+                                                class="d-block bg-light-success text-base text-center p-2 font-medium rounded-lg">
                                                 <span class="h4 d-block mb-0">8</span>
                                                 <span>
-                                                    In progress
+                                                    Pending Payments
                                                 </span>
-                                            </a>
-                                        </div>
-                                        <div class="col-3 col-xl-2 pr-lg-3 pr-xl-0">
-                                            <a href="javascript:void(0);" class="d-block bg-light-danger text-base text-center p-2 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">20</span>
-                                                Closed
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 mt-3 mobile-queries-block">
-                                    <div class="row no-gutters">
-                                        <div class="col-3 col-xl-2 px-1">
-                                            <a href="javascript:void(0);" class="d-block bg-light-info text-base text-center p-1 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">40</span>
-                                                Total
-                                            </a>
-                                        </div>
-                                        <div class="col-3 col-xl-2 px-1">
-                                            <a href="javascript:void(0);" class="d-block bg-light-warning text-base text-center p-1 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">12</span>
-                                                Open
-                                            </a>
-                                        </div>
-                                        <div class="col-3 col-xl-2 px-1">
-                                            <a href="javascript:void(0);" class="d-block bg-light-success text-base text-center p-1 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">8</span>
-                                                <span>
-                                                    In progress
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="col-3 col-xl-2 px-1">
-                                            <a href="javascript:void(0);" class="d-block bg-light-danger text-base text-center p-1 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">20</span>
-                                                Closed
                                             </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="queries-block d-block px-0 pt-3 my-3">
-                                <div>
+                                <div class="gray-scroll">
                                     <table class="table table-borderless">
                                         <thead>
                                             <tr>
-                                                <td>Ticket ID</td>
-                                                <td>Query Category</td>
-                                                <td>Form Name</td>
-                                                <td>Description</td>
+                                                <td>Payment ID</td>
+                                                <td>Payment Mode</td>
                                                 <td>Date</td>
                                                 <td>Current Status</td>
+                                                <td>Date</td>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -365,19 +322,30 @@
                                                         XYZ234567890987
                                                     </a>
                                                 </td>
-                                                <td>Fee Payment</td>
-                                                <td>Form Name</td>
-                                                <td>
-                                                    <div class="table-des">
-                                                        John, all the queries that you've raised with regards to your
-                                                        admission at can be John, all the queries that you've raised with regards to your
-                                                        admission at can be
-                                                    </div>
-                                                </td>
+                                                <td>Online</td>
                                                 <td>18 Apr, 2021</td>
                                                 <td>
-                                                    <i class="fa fa-circle text-light-warning" aria-hidden="true"></i>
-                                                    Open
+                                                    Completed
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);"
+                                                        class="primary-color font-medium">View</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="primary-color font-medium">
+                                                    <a class="primary-color" href="javascript:void(0);">
+                                                        XYZ234567890987
+                                                    </a>
+                                                </td>
+                                                <td>Online</td>
+                                                <td>18 Apr, 2021</td>
+                                                <td>
+                                                    In Progress
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:void(0);"
+                                                        class="primary-color font-medium">View</a>
                                                 </td>
 
                                             </tr>
@@ -387,41 +355,14 @@
                                                         XYZ234567890987
                                                     </a>
                                                 </td>
-                                                <td>Fee Payment</td>
-                                                <td>Form Name</td>
-                                                <td>
-                                                    <div class="table-des">
-                                                        John, all the queries that you've raised with regards to your
-                                                        admission at can be John, all the queries that you've raised with regards to your
-                                                        admission at can be
-                                                    </div>
-                                                </td>
+                                                <td>Online</td>
                                                 <td>18 Apr, 2021</td>
                                                 <td>
-                                                    <i class="fa fa-circle text-light-danger" aria-hidden="true"></i>
-                                                    Closed
+                                                    Pending
                                                 </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="primary-color font-medium">
-                                                    <a class="primary-color" href="javascript:void(0);">
-                                                        XYZ234567890987
-                                                    </a>
-                                                </td>
-                                                <td>Fee Payment</td>
-                                                <td>Form Name</td>
                                                 <td>
-                                                    <div class="table-des">
-                                                        John, all the queries that you've raised with regards to your
-                                                        admission at can be John, all the queries that you've raised with regards to your
-                                                        admission at can be
-                                                    </div>
-                                                </td>
-                                                <td>18 Apr, 2021</td>
-                                                <td>
-                                                    <i class="fa fa-circle text-light-success" aria-hidden="true"></i>
-                                                    In progress
+                                                    <a href="javascript:void(0);"
+                                                        class="primary-color font-medium">View</a>
                                                 </td>
 
                                             </tr>
@@ -431,85 +372,91 @@
                             </div>
                         </section>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- footer -->
-        <footer class="mt-3">
-            <div class="d-flex justify-content-end align-items-center px-5 py-3">
-                Powered By
-                <i class="icon-brand-logo pl-2"></i>
-            </div>
-        </footer>
-        <!-- Question & Answer  -->
-        <div class="cont-rght-side-fixed">
-            <a href="javascript:void(0);" class="btn cont-btn">Ask Queries</a>
-            <div class="cont-us-block" id="contact-us-block">
-                <div class="panel">
-                    <div class="panel-body">
-                        <div class="row">
-                            <div class="col-lg-5 col-xs-6">
-                                <h5 class="mb-0 font-medium">Ask your Query</h5>
-                            </div>
-                            <div class="col-lg-7 col-xs-6 text-right">
-                                <a href="javascript:void(0);" class="query-btn">
-                                    <!-- <i class="fa fa-comments-o" aria-hidden="true"></i> -->
-                                    My Queries
-                                </a>
-                            </div>
-                            <div class="col-12">
-                                <form>
-                                    <div class="floating-input mb-3">
-                                        <input type="text" class="form-control" id="student-name" placeholder="Name*">
-                                        <label for="student-name">Name*</label>
-                                        <small class="text-danger">Name is Required.</small>
-                                    </div>
-                                    <div class="relative mb-3">
-                                        <label for="query-cat">Query Category*</label>
-                                        <select id="query-cat" class="form-control selectpicker" data-live-search="true">
-                                            <option value="">Admission</option>
-                                            <option value="">General</option>
-                                            <option value="">Technical</option>
-                                        </select>
-                                    </div>
-                                    <div class="relative mb-3">
-                                        <label for="select-form">Select Form*</label>
-                                        <select id="select-form" class="form-control selectpicker" data-live-search="true">
-                                            <option value="">Admission</option>
-                                            <option value="">General</option>
-                                            <option value="">Technical</option>
-                                        </select>
-                                    </div>
-                                    <div class="floating-input mb-3">
-                                        <textarea id="query-des" class="form-control"
-                                            placeholder="Query's Description*"></textarea>
-                                        <label for="query-des">Query's Description*</label>
-                                        <small class="form-text text-muted">Total characters count: 0/500.</small>
-                                    </div>
-                                    <div class="form-group fileBrowseCustom">
-                                        <div class="input-group mb-3">
-                                            <input type="text"
-                                                class="text-small form-control bg-transparent text-muted" readonly>
-                                            <input type="file" class="sr-only" id="inputGroupFile03">
-                                            <label for="inputGroupFile03"
-                                                class="btn px-4 ml-3 py-2 bg-secondary text-white">
-                                                Choose file
-                                            </label>
-                                            <small>Maximum size: 2MB. Formats allowed: PDF, DOC, JPG, PNG, JPEG</small>
+                    <!-- footer -->
+                    <footer class="mt-3">
+                        <div class="d-flex justify-content-end align-items-center px-5 py-3">
+                            Powered By
+                            <i class="icon-brand-logo pl-2"></i>
+                        </div>
+                    </footer>
+                    <!-- Question & Answer  -->
+                    <div class="cont-rght-side-fixed">
+                        <a href="javascript:void(0);" class="btn cont-btn">Ask Queries</a>
+                        <div class="cont-us-block" id="contact-us-block">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-lg-5 col-xs-6">
+                                            <h5 class="mb-0 font-medium">Ask your Query</h5>
+                                        </div>
+                                        <div class="col-lg-7 col-xs-6 text-right">
+                                            <a href="javascript:void(0);" class="query-btn">
+                                                <!-- <i class="fa fa-comments-o" aria-hidden="true"></i> -->
+                                                My Queries
+                                            </a>
+                                        </div>
+                                        <div class="col-12">
+                                            <form>
+                                                <div class="floating-input mb-3">
+                                                    <input type="text" class="form-control" id="student-name"
+                                                        placeholder="Name*">
+                                                    <label for="student-name">Name*</label>
+                                                    <small class="text-danger">Name is Required.</small>
+                                                </div>
+                                                <div class="relative mb-3">
+                                                    <label for="query-cat">Query Category*</label>
+                                                    <select id="query-cat" class="form-control selectpicker"
+                                                        data-live-search="true">
+                                                        <option value="">Admission</option>
+                                                        <option value="">General</option>
+                                                        <option value="">Technical</option>
+                                                    </select>
+                                                </div>
+                                                <div class="relative mb-3">
+                                                    <label for="select-form">Select Form*</label>
+                                                    <select id="select-form" class="form-control selectpicker"
+                                                        data-live-search="true">
+                                                        <option value="">Admission</option>
+                                                        <option value="">General</option>
+                                                        <option value="">Technical</option>
+                                                    </select>
+                                                </div>
+                                                <div class="floating-input mb-3">
+                                                    <textarea id="query-des" class="form-control"
+                                                        placeholder="Query's Description*"></textarea>
+                                                    <label for="query-des">Query's Description*</label>
+                                                    <small class="form-text text-muted">Total characters count:
+                                                        0/500.</small>
+                                                </div>
+                                                <div class="form-group fileBrowseCustom">
+                                                    <div class="input-group mb-3">
+                                                        <input type="text"
+                                                            class="text-small form-control bg-transparent text-muted"
+                                                            readonly>
+                                                        <input type="file" class="sr-only" id="inputGroupFile03">
+                                                        <label for="inputGroupFile03"
+                                                            class="btn px-4 ml-3 py-2 bg-secondary text-white">
+                                                            Choose file
+                                                        </label>
+                                                        <small>Maximum size: 2MB. Formats allowed: PDF, DOC, JPG, PNG,
+                                                            JPEG</small>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-5">
+                                                    <button type="submit"
+                                                        class="btn secondary-bg secondary-text-color px-4">Submit</button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
-                                    <div class="mt-5">
-                                        <button type="submit"
-                                            class="btn secondary-bg secondary-text-color px-4">Submit</button>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="cont-side-fixed-bg"></div>
                 </div>
             </div>
         </div>
-        <div class="cont-side-fixed-bg"></div>
     </div>
     <div class="spinner">
         <i class="fa fa-spinner fa-spin fa-3x fa-fw" aria-hidden="true"></i>

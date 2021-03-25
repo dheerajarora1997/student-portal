@@ -10949,7 +10949,7 @@ select.selectpicker {
   --cta-background: green;
 }
 
-.sidebar a i {
+.sidebar a i, .spinner, .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10965,6 +10965,29 @@ select.selectpicker {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.gray-scroll {
+  /* Track */
+  /* Handle */
+}
+.gray-scroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+.gray-scroll::-webkit-scrollbar-track {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  background: #fff;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.125);
+}
+.gray-scroll::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #cacccd;
+}
+.gray-scroll::-webkit-scrollbar-thumb:hover {
+  background: #cacccd;
 }
 
 .text-black {
@@ -11270,6 +11293,18 @@ a, a:hover {
   text-decoration: none;
 }
 a:hover {
+  color: var(--brand-primary);
+}
+
+.spinner {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.8);
+}
+.spinner i {
   color: var(--brand-primary);
 }
 
