@@ -46,6 +46,7 @@ $('.owl-carousel').owlCarousel({
   margin:15,
   stagePadding: 15,
   nav: true,
+  navigation: true,
   autoWidth:true,
   navText: [
     "<i class='fa fa-angle-left'></i>",
