@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="./style/web-css/style.css">
-    <link rel="stylesheet" href="./style/web-css/pages/my-queries.css">
+    <link rel="stylesheet" href="./style/web-css/pages/query-detail.css">
     <link rel="shortcut icon" type="image/jpg" href="./img/fav-icon.png" />
     <!-- <style>
         :root {
@@ -17,7 +17,7 @@
             --primary-font: "Open Sans", sans-serif;
 
             /* Brand color for primary Variable */
-            --brand-hue: 5;
+            --brand-hue: 77;
             --brand-saturation: 100%;
             --brand-light: 50%;
 
@@ -258,174 +258,174 @@
                         </nav>
                     </header>
                     <div class="page-content px-5">
-                        <section class="pt-3">
-                            <div class="student-heading">
-                                <h1 class="font-medium h3">
-                                    My Queries
-                                </h1>
-                                <div class="col-sm-12 col-md-11 col-lg-8 pl-0 pr-md-4">
-                                    <p class="mb-0">John, all the queries that you've raised with regards to your
-                                        admission at
-                                        <strong>{{CollegeName}}</strong> can be found below.
-                                    </p>
+                        <section class="py-3 ">
+                            <div class="student-heading d-flex justify-content-between align-items-center">
+                                <div class="d-flex">
+                                    <a href="./my-queries.html" class="mr-2 back-btn" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Back to Query Listing">
+                                        <i class="fa fa fa-angle-left " role="button" aria-hidden="true"></i>
+                                    </a>
+                                    <h1 class="font-medium h3 mb-0">
+                                        Ticket ID: XYZ234567890987
+                                    </h1>
                                 </div>
+                                <a href="./my-queries.html" class="primary-color font-medium" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Back to Query Listing">
+                                    <i class="icon-long-arrow-left" aria-hidden="true"></i>
+                                    View all Queries
+                                </a>
                             </div>
                         </section>
                         <section>
-                            <div class="label-grid pt-3 px-0 row align-items-center">
-                                <div class="col-3 col-md-4 col-lg-3 col-xl-2 raise-btn-container">
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-secondary w-100 text-black queries-btn px-lg-0 px-xl-3">
-                                        <i class="icon-queries mr-1" aria-hidden="true"></i>
-                                        <span class="d-block my-1">
-                                            Raise a
-                                            <span>Fresh</span>
-                                            Ticket
-                                        </span>
-                                    </a>
-                                </div>
-                                <div class="col-9 col-md-8 col-lg-8 col-xl-8 pl-0 web-queries-block">
-                                    <div class="row">
-                                        <div class="col-3 col-xl-2 pr-0">
-                                            <a href="javascript:void(0);" class="d-block bg-light-info text-base text-center p-2 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">40</span>
-                                                Total
-                                            </a>
-                                        </div>
-                                        <div class="col-3 col-xl-2 pr-0">
-                                            <a href="javascript:void(0);" class="active d-block bg-light-warning text-base text-center p-2 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">12</span>
-                                                Open
-                                            </a>
-                                        </div>
-                                        <div class="col-3 col-xl-2 pr-0">
-                                            <a href="javascript:void(0);" class="d-block bg-light-success text-base text-center p-2 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">8</span>
-                                                <span>
-                                                    In progress
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="col-3 col-xl-2 pr-lg-3 pr-xl-0">
-                                            <a href="javascript:void(0);" class="d-block bg-light-danger text-base text-center p-2 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">20</span>
-                                                Closed
-                                            </a>
+                            <div class="ticket-description mt-4">
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-4 col-xl-4">
+                                        <div class="ticket-detail h-100 pb-0 pb-lg-4">
+                                            <h2 class="h5 font-weight-bold">Ticket Details</h2>
+                                            <div class="card border-0 h-100">
+                                                <div class="card-body">
+                                                    <div class="row mb-3">
+                                                        <div class="col-12 mb-3">
+                                                            <small class="text-muted mb-1">Current Status</small>
+                                                            <span
+                                                                class="font-medium d-block status-label bg-light-warning w-75">Open</span>
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            <small class="text-muted mb-1">Query Category</small>
+                                                            <span class="font-medium d-block">Fees Payment</span>
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            <small class="text-muted mb-1">Form Name</small>
+                                                            <span class="font-medium d-block">XYX Form Name</span>
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            <small class="text-muted mb-1">Ticket Raised on</small>
+                                                            <span class="font-medium d-block">18 Apr, 2021</span>
+                                                        </div>
+                                                        <div class="col-12 mb-3">
+                                                            <small class="text-muted mb-1">Ticket Updated on</small>
+                                                            <span class="font-medium d-block">20 Apr, 2021</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-12 mt-3 mobile-queries-block">
-                                    <div class="row no-gutters">
-                                        <div class="col-3 col-xl-2 px-1">
-                                            <a href="javascript:void(0);" class="d-block bg-light-info text-base text-center p-1 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">40</span>
-                                                Total
-                                            </a>
-                                        </div>
-                                        <div class="col-3 col-xl-2 px-1">
-                                            <a href="javascript:void(0);" class="d-block bg-light-warning text-base text-center p-1 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">12</span>
-                                                Open
-                                            </a>
-                                        </div>
-                                        <div class="col-3 col-xl-2 px-1">
-                                            <a href="javascript:void(0);" class="d-block bg-light-success text-base text-center p-1 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">8</span>
-                                                <span>
-                                                    In progress
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="col-3 col-xl-2 px-1">
-                                            <a href="javascript:void(0);" class="d-block bg-light-danger text-base text-center p-1 font-medium rounded-lg">
-                                                <span class="h4 d-block mb-0">20</span>
-                                                Closed
-                                            </a>
+                                    <div class="col-md-12 col-lg-8 col-xl-8">
+                                        <div class="ticket-conversation mt-5 mt-lg-0">
+                                            <h2 class="h5 font-weight-bold">Conversation</h2>
+                                            <div class="chat-wrapper border rounded position-relative">
+                                                <div class="w-100 chat-box">
+                                                    <div class="chat-container position-relative px-3">
+                                                        <ul class="d-flex flex-column justify-content-end">
+                                                            <li
+                                                                class="chat-msg d-flex  flex-column position-relative sent-msg mt-auto">
+                                                                <small
+                                                                    class="sender-info ml-auto block bg-secondary text-white p-2 text-sm rounded-circle">RP</small>
+                                                                <div class="msg">Lorem Ipsum is simply dummy text of the
+                                                                    printing and typesetting industry. Lorem Ipsum has
+                                                                    been the
+                                                                    industry's standard dummy text ever since the 1500s.
+                                                                </div>
+                                                                <div class="msg file d-flex align-items-center">
+                                                                    <i class="icon-file p-2 h3 m-0 primary-color"
+                                                                        aria-hidden="true"></i>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="primary-color font-medium">
+                                                                        Screenshot--001234.png
+                                                                    </a>
+                                                                </div>
+                                                                <small class="text-muted ml-auto mt-1">
+                                                                    18 Apr, 2021, 4:00 PM
+                                                                </small>
+                                                            </li>
+                                                            <li
+                                                                class="chat-msg d-flex  flex-column position-relative receive-msg">
+                                                                <small class="text-muted mb-1">Team Admission, College
+                                                                    Name</small>
+                                                                <div class="msg">Lorem Ipsum is simply dummy text of the
+                                                                    printing and typesetting industry. Lorem Ipsum has
+                                                                    been the
+                                                                    industry's standard dummy text ever since the 1500s.
+                                                                </div>
+                                                                <small class="text-muted mt-1">
+                                                                    18 Apr, 2021, 4:00 PM
+                                                                </small>
+                                                            </li>
+                                                            <li
+                                                                class="chat-msg d-flex  flex-column position-relative sent-msg mt-auto">
+                                                                <small
+                                                                    class="sender-info ml-auto block bg-secondary text-white p-2 text-sm rounded-circle">RP</small>
+                                                                <div class="msg">Lorem Ipsum is simply dummy text of the
+                                                                    printing and typesetting industry. Lorem Ipsum has
+                                                                    been the
+                                                                    industry's standard dummy text ever since the 1500s.
+                                                                </div>
+                                                                <small class="text-muted ml-auto mt-1">
+                                                                    18 Apr, 2021, 4:00 PM
+                                                                </small>
+                                                            </li>
+                                                        </ul>
+                                                        <div class="ticket-status position-relative d-flex justify-content-center">
+                                                            <span class="position-absolute text-small text-danger font-medium">
+                                                                Ticket Closed
+                                                            </span>
+                                                        </div>
+                                                        <ul>
+                                                            <li
+                                                                class="chat-msg d-flex  flex-column position-relative receive-msg">
+                                                                <small class="text-muted mb-1">Team Admission, College
+                                                                    Name</small>
+                                                                <div class="msg">Lorem Ipsum is simply dummy text of the
+                                                                    printing and typesetting industry. Lorem Ipsum has
+                                                                    been the
+                                                                    industry's standard dummy text ever since the 1500s.
+                                                                </div>
+                                                                <div class="msg file d-flex align-items-center">
+                                                                    <i class="icon-file p-2 h3 m-0 primary-color"
+                                                                        aria-hidden="true"></i>
+                                                                    <a href="javascript:void(0);"
+                                                                        class="primary-color font-medium">
+                                                                        Screenshot--001234.png
+                                                                    </a>
+                                                                </div>
+                                                                <small class="text-muted mt-1">
+                                                                    18 Apr, 2021, 4:00 PM
+                                                                </small>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- <div
+                                                    class="chat-area position-absolute fixed-bottom bg-white d-flex align-items-center">
+                                                    <textarea name="" id="" resize="none" class="px-3 form-control"
+                                                        placeholder="Write your message here..."></textarea>
+                                                    <label for="attachment" class="m-0 p-3" role="button" tabindex="0">
+                                                        <i class="icon-attachment h5" aria-hidden="true"></i>
+                                                        <input type="file" class="sr-only" id="attachment">
+                                                    </label>
+                                                    <a href="javascript:void(0);"
+                                                        class="p-2 primary-bg primary-text-color mr-2 rounded-circle send-btn">
+                                                        <i class="icon-send" aria-hidden="true"></i>
+                                                    </a>
+                                                </div> -->
+                                                <!-- Submit Feedback -->
+                                                <div class="ticket-status-label position-absolute fixed-bottom bg-white d-flex justify-content-between align-items-center px-3 py-3 border-top">
+                                                    <div class="d-flex">
+                                                        <p class="mb-0 pr-2 mr-2 border-right  text-danger font-medium">Ticket Closed</p>
+                                                        <a href="#reopen-modal" data-toggle="modal" class="primary-color">Re-open Query</a>
+                                                    </div>
+                                                    <div class="d-flex align-items-center feedback-response">
+                                                        <p class="mb-0">Feedback</p>
+                                                        <a href="javascript:void(0);" class="bg-light-success text-base p-2 mx-2 rounded-circle">
+                                                            <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="bg-light-danger text-base p-2 rounded-circle">
+                                                            <i class="fa fa-thumbs-down" aria-hidden="true"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="queries-block d-block px-0 pt-3 my-3">
-                                <div>
-                                    <table class="table table-borderless">
-                                        <thead>
-                                            <tr>
-                                                <td>Ticket ID</td>
-                                                <td>Query Category</td>
-                                                <td>Form Name</td>
-                                                <td>Description</td>
-                                                <td>Date</td>
-                                                <td>Current Status</td>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="font-medium">
-                                                    <a class="primary-color" href="./query-detail.html">
-                                                        XYZ234567890987
-                                                    </a>
-                                                </td>
-                                                <td>Fee Payment</td>
-                                                <td>Form Name</td>
-                                                <td>
-                                                    <div class="table-des">
-                                                        John, all the queries that you've raised with regards to your
-                                                        admission at can be John, all the queries that you've raised with regards to your
-                                                        admission at can be
-                                                    </div>
-                                                </td>
-                                                <td>18 Apr, 2021</td>
-                                                <td>
-                                                    <i class="fa fa-circle text-light-warning" aria-hidden="true"></i>
-                                                    Open
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="primary-color font-medium">
-                                                    <a class="primary-color" href="./query-detail.html">
-                                                        XYZ234567890987
-                                                    </a>
-                                                </td>
-                                                <td>Fee Payment</td>
-                                                <td>Form Name</td>
-                                                <td>
-                                                    <div class="table-des">
-                                                        John, all the queries that you've raised with regards to your
-                                                        admission at can be John, all the queries that you've raised with regards to your
-                                                        admission at can be
-                                                    </div>
-                                                </td>
-                                                <td>18 Apr, 2021</td>
-                                                <td>
-                                                    <i class="fa fa-circle text-light-danger" aria-hidden="true"></i>
-                                                    Closed
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td class="primary-color font-medium">
-                                                    <a class="primary-color" href="./query-detail.html">
-                                                        XYZ234567890987
-                                                    </a>
-                                                </td>
-                                                <td>Fee Payment</td>
-                                                <td>Form Name</td>
-                                                <td>
-                                                    <div class="table-des">
-                                                        John, all the queries that you've raised with regards to your
-                                                        admission at can be John, all the queries that you've raised with regards to your
-                                                        admission at can be
-                                                    </div>
-                                                </td>
-                                                <td>18 Apr, 2021</td>
-                                                <td>
-                                                    <i class="fa fa-circle text-light-success" aria-hidden="true"></i>
-                                                    In progress
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
                                 </div>
                             </div>
                         </section>
@@ -465,7 +465,8 @@
                                     </div>
                                     <div class="relative mb-3">
                                         <label for="query-cat">Query Category*</label>
-                                        <select id="query-cat" class="form-control selectpicker" data-live-search="true">
+                                        <select id="query-cat" class="form-control selectpicker"
+                                            data-live-search="true">
                                             <option value="">Admission</option>
                                             <option value="">General</option>
                                             <option value="">Technical</option>
@@ -473,7 +474,8 @@
                                     </div>
                                     <div class="relative mb-3">
                                         <label for="select-form">Select Form*</label>
-                                        <select id="select-form" class="form-control selectpicker" data-live-search="true">
+                                        <select id="select-form" class="form-control selectpicker"
+                                            data-live-search="true">
                                             <option value="">Admission</option>
                                             <option value="">General</option>
                                             <option value="">Technical</option>
@@ -487,8 +489,8 @@
                                     </div>
                                     <div class="form-group fileBrowseCustom">
                                         <div class="input-group mb-3">
-                                            <input type="text"
-                                                class="text-small form-control bg-transparent text-muted" readonly>
+                                            <input type="text" class="text-small form-control bg-transparent text-muted"
+                                                readonly>
                                             <input type="file" class="sr-only" id="inputGroupFile03">
                                             <label for="inputGroupFile03"
                                                 class="btn px-4 ml-3 py-2 bg-secondary text-white">
@@ -513,6 +515,98 @@
     <div class="full-page-spinner">
         <i class="fa fa-spinner fa-spin fa-3x fa-fw" aria-hidden="true"></i>
         <span class="sr-only">Loading</span>
+    </div>
+    <!-- Button trigger modal -->
+    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#feedback-modal">
+        Launch  modal
+    </button> -->
+
+    <!-- Modal -->
+    <div class="modal fade confirmation-popup default-primary" id="confirmation-modal" data-backdrop="static"
+        data-keyboard="false" tabindex="-1" aria-labelledby="confirmationLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-medium" id="confirmationLabel">Confirmation Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center py-4 h5 font-weight-normal">
+                    Are you sure you want to save these changes?
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary col-4" data-dismiss="modal">Discard</button>
+                    <button type="button" class="btn btn-primary col-4 py-2 cs-btn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade reopen-popup" id="reopen-modal" data-backdrop="static"
+        data-keyboard="false" tabindex="-1" aria-labelledby="confirmationLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-medium" id="confirmationLabel">Re-open Query</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center py-4 h5 font-weight-normal">
+                    Are you sure you want to <strong>Re-open</strong> this Ticket?
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-secondary col-4" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary col-4 py-2 cs-btn">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade feedback-popup" id="feedback-modal" data-backdrop="static" data-keyboard="false"
+        tabindex="-1" aria-labelledby="feedbackLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-medium" id="feedbackLabel">Feedback</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <h2 class="h5 text-center">Are you satisfied with the response?</h2>
+                    <div class="row justify-content-center">
+                        <div class="col-8">
+                            <div class="row mt-3">
+                                <div class="col-6">
+                                    <div class="cs-input">
+                                        <input type="radio" name="feedback-response" id="unsatisfied">
+                                        <label for="unsatisfied"
+                                            class="text-danger d-flex align-items-center justify-content-center"
+                                            role="button">
+                                            <i class="fa fa fa-thumbs-o-down fa-3x ml-3" aria-hidden="true"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="cs-input">
+                                        <input type="radio" name="feedback-response" id="satisfied">
+                                        <label for="satisfied"
+                                            class="text-success d-flex align-items-center justify-content-center"
+                                            role="button">
+                                            <i class="fa fa fa-thumbs-o-up fa-3x ml-3" aria-hidden="true"></i>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary col-4 cs-btn py-2">Submit</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./vendor/jquery/jquery.min.js"></script>
     <script src="./vendor/bootstrap-js/popper.min.js"></script>

@@ -75,7 +75,7 @@ $('.owl-carousel').owlCarousel({
 
 $(document).ready(function(){
   setInterval(function(){
-    $('.spinner').addClass("d-none")
+    $('.full-page-spinner').addClass("d-none")
   }, 2000);
 
 });

@@ -160,15 +160,21 @@ a{
   }
 }
 
-.spinner{
+.full-page-spinner,
+.section-spinner{
   @extend %flex-center;
   position: fixed;
   width:100%;
   height: 100%;
   top:0;
-  z-index: 999;
+  z-index: 99999;
   background: rgba(255,255,255,0.8);
   i{
     color: var(--brand-primary);
   }
+}
+
+.section-spinner{
+  position: absolute;
+  z-index: 1;
 }

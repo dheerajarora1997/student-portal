@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="./style/mobile-css/style.css">
-    <link rel="stylesheet" href="./style/mobile-css/pages/query-detail.css">
+    <link rel="stylesheet" href="./style/mobile-css/pages/my-payments.css">
     <link rel="shortcut icon" type="image/jpg" href="./img/fav-icon.png" />
     <!-- <style>
         :root {
@@ -56,7 +56,7 @@
 </head>
 
 <body>
-    <div class="mobile-wrapper my-queries d-block">
+    <div class="mobile-wrapper my-payments d-block">
         <header>
             <div class="py-2 px-3">
                 <nav class="navbar align-items-center p-0">
@@ -167,175 +167,107 @@
                 </nav>
             </div>
         </header>
-        <section class="border-top">
-            <div class="d-flex pt-4 px-3">
-                <a href="./my-queries-mobile.html" class="mr-2 back-btn" data-toggle="tooltip" data-placement="bottom" data-container="body" title="Back to Query Listing">
-                    <i class="fa fa fa-angle-left " role="button" aria-hidden="true"></i>
-                </a>
-                <h1 class="h4 font-medium">Ticket ID: XYZ123456789</h1>
+        <section>
+            <div class="welcome-panel primary-bg px-3 primary-text-color">
+                <div class="text-center py-3">
+                    <i class="icon-file p-3 mb-3 d-inline-block"></i>
+                    <h1 class="font-medium h4 mb-2">
+                        John, Welcome to Program Finder
+                    </h1>
+                    <div class="col-sm-12 col-md-11 col-lg-8 pl-0 pr-md-4">
+                        <p class="mb-0">You can search for and Apply to all the courses offered by
+                            <strong>{{CollegeName}}</strong>.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="ticket-section">
-            <div class="d-block px-3">
-                <div class="ticket-accordion mt-4" id="ticketAccordion">
-                    <div class="card mb-3">
-                        <div class="card-header bg-white">
-                            <button
-                                class="btn btn-link btn-block text-left pl-0 text-decoration-none shadow-none position-relative"
-                                type="button" data-toggle="collapse" data-target="#ticket-detail" aria-expanded="false"
-                                aria-controls="ticket-detail">
-                                <h3 class="h5 mb-0 font-medium text-base">Ticket Details</h3>
-                            </button>
+        <section>
+            <div class="pt-3 px-3">
+                <form>
+                    <div class="floating-input">
+                        <input type="text" class="form-control" id="student-name" placeholder="Name*">
+                        <label for="student-name">Name*</label>
+                        <small class="text-danger">Name is Required.</small>
+                    </div>
+                    <div class="floating-input">
+                        <input type="text" class="form-control" id="student-name" placeholder="Name*">
+                        <label for="student-name">Name*</label>
+                        <small class="text-danger">Name is Required.</small>
+                    </div>
+                    <div class="mt-4">
+
+                    </div>
+                </form>
+
+            </div>
+            <div class="label-grid pt-3 px-3">
+                <div class="d-block bg-light-danger text-center py-2 font-weight-light rounded-lg">
+                    <span class="h5 d-block mb-1">40</span>
+                    Total Payments
+                </div>
+                <div class="d-block bg-light-success text-center py-2 font-weight-light rounded-lg">
+                    <span class="h5 d-block mb-1">12</span>
+                    Pending Payments
+                </div>
+            </div>
+            <div class="queries-block d-block px-3 pt-3">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="content-header">
+                            <span class="d-block primary-color">Payment ID</span>
+                            <span class="d-block primary-color font-medium">XYZ12345678</span>
                         </div>
-                        <div id="ticket-detail" class="collapse" aria-labelledby="headingOne"
-                            data-parent="#ticketAccordion">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-12 mb-3">
-                                        <small class="text-muted mb-1">Current Status</small>
-                                        <!-- <span class="font-medium d-block">
-                                            <i class="fa fa-circle text-light-warning" aria-hidden="true"></i>
-                                            Open
-                                        </span> -->
-                                        <span class="font-medium d-block status-label bg-light-warning  w-75">Open</span>
-                                    </div>
-                                    <div class="col-12 mb-3">
-                                        <small class="text-muted mb-1">Query Category</small>
-                                        <span class="font-medium d-block">Fees Payment</span>
-                                    </div>
-                                    <div class="col-12 mb-3">
-                                        <small class="text-muted mb-1">Form Name</small>
-                                        <span class="font-medium d-block">XYX Form Name</span>
-                                    </div>
-                                    <div class="col-12 mb-3">
-                                        <small class="text-muted mb-1">Ticket Raised on</small>
-                                        <span class="font-medium d-block">18 Apr, 2021</span>
-                                    </div>
-                                    <div class="col-12 mb-3">
-                                        <small class="text-muted mb-1">Ticket Updated on</small>
-                                        <span class="font-medium d-block">20 Apr, 2021</span>
-                                    </div>
+                        <div class="content-des pt-3 pb-2">
+                            <div class="queries-grid">
+                                <div class="query-category">
+                                    <small class="text-muted">Payment Mode</small>
+                                    <span class="d-block font-medium">Online</span>
+                                </div>
+                                <div class="query-date">
+                                    <small class="text-muted">Date</small>
+                                    <span class="d-block font-medium">18 Apr, 2021</span>
+                                </div>
+                                <div class="query-status">
+                                    <small class="text-muted">Current Status</small>
+                                    Completed
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-header bg-white">
-                            <button
-                                class="btn btn-link btn-block text-left pl-0 text-decoration-none shadow-none position-relative"
-                                type="button" data-toggle="collapse" data-target="#ticket-conversation"
-                                aria-expanded="true" aria-controls="ticket-conversation">
-                                <h3 class="h5 mb-0 font-medium text-base">Conversation</h3>
-                            </button>
+                        <div class="card-action mb-2 mt-3">
+                            <div class="row justify-content-center align-items-center">
+                                <a href="javascript:void(0);" class="col-5 cs-btn">Download</a>
+                                <a href="javascript:void(0);" class="col-5 cs-btn">View</a>
+                            </div>
                         </div>
-                        <div id="ticket-conversation" class="collapse show" aria-labelledby="headingOne"
-                            data-parent="#ticketAccordion">
-                            <div class="card-body p-0">
-                                <div class="chat-wrapper position-relative">
-                                    <div class="w-100 chat-box">
-                                        <div class="chat-container position-relative px-3">
-                                            <ul class="d-flex flex-column justify-content-end">
-                                                <li
-                                                    class="chat-msg d-flex  flex-column position-relative sent-msg mt-auto">
-                                                    <small
-                                                        class="sender-info ml-auto block bg-secondary text-white p-2 text-sm rounded-circle">RP</small>
-                                                    <div class="msg">Lorem Ipsum is simply dummy text of the
-                                                        printing and typesetting industry. Lorem Ipsum has
-                                                        been the
-                                                        industry's standard dummy text ever since the 1500s.
-                                                    </div>
-                                                    <small class="text-muted ml-auto mt-1">
-                                                        18 Apr, 2021, 4:00 PM
-                                                    </small>
-                                                </li>
-                                                <li class="chat-msg d-flex  flex-column position-relative receive-msg">
-                                                    <small class="text-muted mb-1">Team Admission, College
-                                                        Name</small>
-                                                    <div class="msg">Lorem Ipsum is simply dummy text of the
-                                                        printing and typesetting industry. Lorem Ipsum has
-                                                        been the
-                                                        industry's standard dummy text ever since the 1500s.
-                                                    </div>
-                                                    <small class="text-muted mt-1">
-                                                        18 Apr, 2021, 4:00 PM
-                                                    </small>
-                                                </li>
-                                                <li
-                                                    class="chat-msg d-flex  flex-column position-relative sent-msg mt-auto">
-                                                    <small
-                                                        class="sender-info ml-auto block bg-secondary text-white p-2 text-sm rounded-circle">RP</small>
-                                                    <div class="msg">Lorem Ipsum is simply dummy text of the
-                                                        printing and typesetting industry. Lorem Ipsum has
-                                                        been the
-                                                        industry's standard dummy text ever since the 1500s.
-                                                    </div>
-                                                    <small class="text-muted ml-auto mt-1">
-                                                        18 Apr, 2021, 4:00 PM
-                                                    </small>
-                                                </li>
-                                            </ul>
-                                            <div class="ticket-status position-relative d-flex justify-content-center">
-                                                <span class="position-absolute text-small text-danger font-medium">
-                                                    Ticket Closed
-                                                </span>
-                                            </div>
-                                            <ul>
-                                                <li class="chat-msg d-flex  flex-column position-relative receive-msg">
-                                                    <small class="text-muted mb-1">Team Admission, College
-                                                        Name</small>
-                                                    <div class="msg">Lorem Ipsum is simply dummy text of the
-                                                        printing and typesetting industry. Lorem Ipsum has
-                                                        been the
-                                                        industry's standard dummy text ever since the 1500s.
-                                                    </div>
-                                                    <div class="msg file d-flex align-items-center">
-                                                        <i class="icon-file p-2 h3 m-0 primary-color"
-                                                            aria-hidden="true"></i>
-                                                        <a href="javascript:void(0);"
-                                                            class="primary-color font-medium">
-                                                            Screenshot--001234.png
-                                                        </a>
-                                                    </div>
-                                                    <small class="text-muted mt-1">
-                                                        18 Apr, 2021, 4:00 PM
-                                                    </small>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div
-                                        class="chat-area position-absolute fixed-bottom bg-white d-flex align-items-center">
-                                        <textarea name="" id="" resize="none" class="px-3 form-control"
-                                            placeholder="Write your message here..."></textarea>
-                                        <label for="attachment" class="m-0 p-3" role="button" tabindex="0">
-                                            <i class="icon-attachment h5" aria-hidden="true"></i>
-                                            <input type="file" class="sr-only" id="attachment">
-                                        </label>
-                                        <a href="javascript:void(0);"
-                                            class="p-2 primary-bg primary-text-color mr-2 rounded-circle send-btn">
-                                            <i class="icon-send" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                    <!-- Submit Feedback -->
-                                    <!-- <div
-                                        class="ticket-status-label position-absolute fixed-bottom bg-white d-flex justify-content-between align-items-center px-3 py-3 border-top">
-                                        <div class="d-flex mb-3 mb-sm-0">
-                                            <p class="mb-0 pr-2 mr-2 border-right text-danger font-medium">Ticket Closed</p>
-                                            <a href="javascript:void(0);" class="primary-color">Re-open Query</a>
-                                        </div>
-                                        <div class="d-flex align-items-center feedback-response">
-                                            <p class="mb-0">Feedback</p>
-                                            <a href="javascript:void(0);"
-                                                class="bg-light-success text-base p-2 mx-2 rounded-circle">
-                                                <i class="fa fa-thumbs-up" aria-hidden="true"></i>
-                                            </a>
-                                            <a href="javascript:void(0);"
-                                                class="bg-light-danger text-base p-2 rounded-circle">
-                                                <i class="fa fa-thumbs-down" aria-hidden="true"></i>
-                                            </a>
-                                        </div>
-                                    </div> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="content-header">
+                            <span class="d-block primary-color">Payment ID</span>
+                            <span class="d-block primary-color font-medium">XYZ12345678</span>
+                        </div>
+                        <div class="content-des pt-3 pb-2">
+                            <div class="queries-grid">
+                                <div class="query-category">
+                                    <small class="text-muted">Payment Mode</small>
+                                    <span class="d-block font-medium">Online</span>
                                 </div>
+                                <div class="query-date">
+                                    <small class="text-muted">Date</small>
+                                    <span class="d-block font-medium">17 Apr, 2021</span>
+                                </div>
+                                <div class="query-status">
+                                    <small class="text-muted">Current Status</small>
+                                    Pending
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-action mb-2 mt-3">
+                            <div class="row justify-content-center align-items-center">
+                                <a href="javascript:void(0);" class="col-5 cs-btn">Download</a>
+                                <a href="javascript:void(0);" class="col-5 cs-btn">View</a>
                             </div>
                         </div>
                     </div>

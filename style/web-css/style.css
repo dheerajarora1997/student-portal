@@ -10949,7 +10949,8 @@ select.selectpicker {
   --cta-background: green;
 }
 
-.sidebar a i, .spinner, .flex-center {
+.sidebar a i, .full-page-spinner,
+.section-spinner, .back-btn, .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11042,20 +11043,37 @@ select.selectpicker {
   grid-column: span 3/span 3;
 }
 
+.back-btn {
+  color: #666;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #f1f1f1;
+}
+.back-btn:hover {
+  color: var(--brand-primary);
+  background-color: hsl(var(--brand-hue), var(--brand-saturation), calc(var(--brand-light) + 45%));
+}
+
 .bg-light-info:active, .bg-light-info.active {
   background-color: #81b5ff !important;
+  box-shadow: 0 0 0 0.15rem #17a2b8;
 }
 
 .bg-light-warning:active, .bg-light-warning.active {
   background-color: #f8d587 !important;
+  box-shadow: 0 0 0 0.15rem #ffc107;
 }
 
 .bg-light-success:active, .bg-light-success.active {
   background-color: #9ee8c7 !important;
+  box-shadow: 0 0 0 0.15rem #28a745;
 }
 
 .bg-light-danger:active, .bg-light-danger.active {
   background-color: #f59eb6 !important;
+  box-shadow: 0 0 0 0.15rem #dc3545;
 }
 
 ::-webkit-scrollbar {
@@ -11165,6 +11183,22 @@ select.selectpicker {
 }
 .modal.default-primary .modal-header .close:hover {
   color: var(--primary-text-color);
+}
+.modal.default-success .modal-header {
+  background: #c7f2df;
+  color: #28a745;
+}
+.modal.default-warning .modal-header {
+  background: #fbe6b7;
+  color: #323232;
+}
+.modal.default-danger .modal-header {
+  background: #faccd9;
+  color: #dc3545;
+}
+.modal.default-info .modal-header {
+  background: #b4d3ff;
+  color: #17a2b8;
 }
 
 .modal.verify-popup .modal-dialog {
@@ -11296,16 +11330,23 @@ a:hover {
   color: var(--brand-primary);
 }
 
-.spinner {
+.full-page-spinner,
+.section-spinner {
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
-  z-index: 999;
+  z-index: 99999;
   background: rgba(255, 255, 255, 0.8);
 }
-.spinner i {
+.full-page-spinner i,
+.section-spinner i {
   color: var(--brand-primary);
+}
+
+.section-spinner {
+  position: absolute;
+  z-index: 1;
 }
 
 /*!

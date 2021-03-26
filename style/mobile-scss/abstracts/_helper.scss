@@ -58,11 +58,27 @@
   @extend %flex-center;
 }
 
+.back-btn {
+  color: #666;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: #f1f1f1;
+  @extend %flex-center;
+
+  &:hover {
+    color: var(--brand-primary);
+    background-color: $brand-light-55;
+  }
+}
+
 .bg-light-info {
 
   &:active,
   &.active {
     background-color: #81b5ff !important;
+    box-shadow: 0 0 0 0.15rem $info;
   }
 }
 
@@ -71,6 +87,7 @@
   &:active,
   &.active {
     background-color: #f8d587 !important;
+    box-shadow: 0 0 0 0.15rem $warning;
   }
 }
 
@@ -79,6 +96,7 @@
   &:active,
   &.active {
     background-color: #9ee8c7 !important;
+    box-shadow: 0 0 0 0.15rem $success;
   }
 }
 
@@ -87,5 +105,6 @@
   &:active,
   &.active {
     background-color: #f59eb6 !important;
+    box-shadow: 0 0 0 0.15rem $danger;
   }
 }
