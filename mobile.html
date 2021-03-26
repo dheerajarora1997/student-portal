@@ -46,8 +46,8 @@
                     </a>
                     <ul class="navbar-nav ml-auto flex-row align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link px-1 mr-3 query-icon" href="#chatModal"
-                                role="button" data-toggle="modal" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link px-1 mr-3 query-icon" href="#chatModal" role="button" data-toggle="modal"
+                                aria-haspopup="true" aria-expanded="false">
                                 <i class="icon-queries-advanced h4" aria-hidden="true"></i>
                             </a>
                         </li>
@@ -91,8 +91,7 @@
                                     </li>
                                 </ul>
                                 <div class="text-center my-3 d-inline-block w-100">
-                                    <a href="javascript:void(0);"
-                                        class="btn btn-outline-secondary btn-sm rounded-0">
+                                    <a href="javascript:void(0);" class="btn btn-outline-secondary btn-sm rounded-0">
                                         <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
                                         Load More
                                     </a>
@@ -181,8 +180,7 @@
                                             </a>
                                         </div>
                                         <div class="section-spinner">
-                                            <i class="fa fa-spinner fa-spin fa-3x fa-fw"
-                                                aria-hidden="true"></i>
+                                            <i class="fa fa-spinner fa-spin fa-3x fa-fw" aria-hidden="true"></i>
                                             <span class="sr-only">Loading</span>
                                         </div>
                                     </div>
@@ -404,13 +402,13 @@
             <nav>
                 <ul class="mb-0">
                     <li><a href="./my-queries-mobile.html" data-toggle="tooltip" data-placement="top"
-                        data-container="body" title="My Queries"><i class="icon-queries p-3"></i></a></li>
-                    <li><a href="javascript:void(0);"data-toggle="tooltip" data-placement="top"
-                        data-container="body" title="Program Finder"><i class="icon-finder p-3"></i></a></li>
+                            data-container="body" title="My Queries"><i class="icon-queries p-3"></i></a></li>
+                    <li><a href="./my-program-finder-mobile.html" data-toggle="tooltip" data-placement="top"
+                            data-container="body" title="Program Finder"><i class="icon-finder p-3"></i></a></li>
                     <li><a href="./mobile.html" class="active" data-toggle="tooltip" data-placement="top"
-                        data-container="body" title="Dashboard"><i class="icon-dashboard p-3"></i></a></li>
-                    <li><a href="./my-application-mobile.html"data-toggle="tooltip" data-placement="top"
-                        data-container="body" title="My Applications"><i class="icon-file p-3"></i></a></li>
+                            data-container="body" title="Dashboard"><i class="icon-dashboard p-3"></i></a></li>
+                    <li><a href="./my-application-mobile.html" data-toggle="tooltip" data-placement="top"
+                            data-container="body" title="My Applications"><i class="icon-file p-3"></i></a></li>
                     <li><a href="javascript:void(0);" class="mob-nav"><i class="icon-navigation p-3"></i></a></li>
                 </ul>
             </nav>
@@ -509,7 +507,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="row">
+                    <div class="row d-none">
                         <div class="col-12">
                             <form>
                                 <div class="form-group floating-input">
@@ -558,6 +556,18 @@
                             </form>
                         </div>
                     </div>
+                    <div class="query-response pb-5">
+                        <h2 class="h6 font-medium">Dear Mr/Ms. {{Name}}</h2>
+                        <p class="mb-4">We are in receipt of your query. Your query will be answered shortly. You may
+                            check the status of your query at <a class="primary-color" href="javascript:void(0);">My
+                                Queries</a></p>
+
+                        <p class="mb-0 font-medium">Best wishes,</p>
+                        <p class="mb-0 font-medium">Acharya Institutes</p>
+                        <div class="text-center py-4">
+                            <button class="btn cs-btn px-4">Ok</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -571,7 +581,7 @@
     <script src="./vendor/bootstrap-js/bootstrap.min.js"></script>
     <script src="./vendor/owl.carousel/dist/owl.carousel.js"></script>
     <script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-   <script src="./js/theme.js"></script>
+    <script src="./js/theme.js"></script>
 </body>
 
 </html>
