@@ -11085,6 +11085,23 @@ footer nav ul a, footer nav ul a:hover, header .hamburger-icon, .full-page-spinn
   font-size: 1.3rem;
 }
 
+.cs-btn {
+  padding: 6px 5px;
+  text-align: center;
+  margin: 5px 10px;
+  border-radius: 5px;
+  font-size: 90%;
+  font-weight: normal;
+  white-space: nowrap;
+  background: var(--cta-primary);
+  color: var(--cta-text-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.cs-btn:hover {
+  background: hsl(var(--cta-hue), var(--cta-saturation), calc(var(--cta-light) - 5%));
+  color: var(--cta-text-color);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -14306,7 +14323,7 @@ a:hover {
 }
 .cont-rght-side-fixed .cont-us-block ul > li a.active i,
 .cont-rght-side-fixed .cont-us-block ul > li a:hover i {
-  background: hsl(var(--brand-hue), var(--brand-saturation), calc(var(--brand-light) + 52%));
+  background: hsl(var(--brand-hue), var(--brand-saturation), calc(var(--brand-light) + 5%));
 }
 .cont-rght-side-fixed .cont-us-block ul > li:first-child {
   border-bottom: 1px solid hsl(var(--brand-hue), var(--brand-saturation), calc(var(--brand-light) - 5%));
