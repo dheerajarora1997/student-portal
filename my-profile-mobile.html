@@ -68,8 +68,8 @@
                     </a>
                     <ul class="navbar-nav ml-auto flex-row align-items-center">
                         <li class="nav-item">
-                            <a class="nav-link px-1 mr-3 query-icon " href="#chatModal" role="button"
-                                data-toggle="modal" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link px-1 mr-3 query-icon" href="#chatModal" role="button" data-toggle="modal"
+                                aria-haspopup="true" aria-expanded="false">
                                 <i class="icon-queries-advanced h4" aria-hidden="true"></i>
                             </a>
                         </li>
@@ -383,7 +383,7 @@
                             </ol>
                         </li>
                         <li>
-                            <a href="./my-application-mobile.html" class="primary-text-color py-2 px-3 d-block"><i
+                            <a href="./my-application.html" class="primary-text-color py-2 px-3 d-block"><i
                                     class="p-3 mr-2 icon-user-o" aria-hidden="true"></i>
                                 <span>My Application</span>
                             </a>
@@ -445,17 +445,80 @@
                 </div>
             </div>
         </div>
+        <div class="modal chat-modal fade" id="chatModal" tabindex="-1" aria-labelledby="chatModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title font-medium" id="chatModalLabel">Ask your Query</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span class="fa fa-times" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <form>
+                                    <div class="form-group floating-input">
+                                        <input type="text" class="form-control" id="student-name" placeholder="Name*">
+                                        <label for="student-name">Name*</label>
+                                        <small class="text-danger">Name is Required.</small>
+                                    </div>
+                                    <div class="form-group floating-input">
+                                        <select id="query-cat" class="form-control">
+                                            <option value="">Admission</option>
+                                            <option value="">General</option>
+                                            <option value="">Technical</option>
+                                        </select>
+                                        <label for="query-cat">Query Category*</label>
+                                    </div>
+                                    <div class="form-group floating-input">
+                                        <select id="select-form" class="form-control">
+                                            <option value="">Admission</option>
+                                            <option value="">General</option>
+                                            <option value="">Technical</option>
+                                        </select>
+                                        <label for="select-form">Select Form*</label>
+                                    </div>
+                                    <div class="form-group floating-input">
+                                        <textarea id="query-des" class="form-control"
+                                            placeholder="Query's Description*"></textarea>
+                                        <label for="query-des">Query's Description*</label>
+                                        <small class="form-text text-muted">Total characters count: 0/500.</small>
+                                    </div>
+                                    <div class="form-group d-inline-block fileBrowseCustom">
+                                        <div class="input-group mb-3">
+                                            <input type="text"
+                                                class="text-small form-control py-2 bg-transparent text-muted" readonly="">
+                                            <input type="file" class="sr-only" id="inputGroupFile03">
+                                            <label for="inputGroupFile03"
+                                                class="btn px-4 ml-3 py-2 bg-secondary text-white">
+                                                Choose file
+                                            </label>
+                                            <small>Maximum size: 2MB. Formats allowed: PDF, DOC, JPG, PNG, JPEG</small>
+                                        </div>
+                                    </div>
+                                    <div class="mt-5">
+                                        <button type="submit"
+                                            class="btn secondary-bg secondary-text-color px-5 w-100">Submit</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="full-page-spinner">
         <i class="fa fa-spinner fa-spin fa-3x fa-fw" aria-hidden="true"></i>
         <span class="sr-only">Loading</span>
     </div>
-    <script src="./vendor/jquery/jquery.min.js"></script>
-    <script src="./vendor/bootstrap-js/popper.min.js"></script>
-    <script src="./vendor/bootstrap-js/bootstrap.min.js"></script>
-    <script src="./vendor/owl.carousel/dist/owl.carousel.js"></script>
-    <script src="./vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-   <script src="./js/theme.js"></script>
+    <script src="./js/vendor/jquery/jquery.min.js"></script>
+    <script src="./js/vendor/bootstrap-js/popper.min.js"></script>
+    <script src="./js/vendor/bootstrap-js/bootstrap.min.js"></script>
+    <script src="./js/vendor/owl.carousel/src/js/owl.carousel.js"></script>
+    <script src="./js/vendor/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="./js/theme.js"></script>
 </body>
 
 </html>
