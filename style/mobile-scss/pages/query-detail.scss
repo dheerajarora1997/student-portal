@@ -14,6 +14,7 @@
         padding-left: 23px;
         border-radius: 0 20px 20px 0;
     }
+
     .ticket-section {
         min-height: 60vh;
     }
@@ -59,7 +60,7 @@
                     padding: 10px;
                     border-radius: 5px;
                     background: #f7f7f7;
-                    color : #111;
+                    color: #111;
 
                     &:before {
                         content: '\f0da';
@@ -96,11 +97,12 @@
                 }
             }
         }
-        .ticket-status{
+
+        .ticket-status {
             text-align: center;
             border-bottom: 1px solid #f1f1f1;
 
-            span{
+            span {
                 background: $white;
                 top: -9px;
                 padding: 0 10px;
@@ -113,6 +115,14 @@
     .chat-area {
         bottom: -1px;
         border-top: 1px solid #ececec !important;
+
+        .chat-file {
+            top: -26px;
+
+            i {
+                font-size: 16px;
+            }
+        }
 
         textarea {
             resize: none;
@@ -132,7 +142,8 @@
             @extend %flex-center;
             width: 30px;
             height: 30px;
-            &:hover{
+
+            &:hover {
                 color: $base-color;
             }
         }
@@ -140,12 +151,12 @@
     }
 }
 
-@media only screen and (max-width:767px){
-    .my-queries .ticket-status-label{
+@media only screen and (max-width:767px) {
+    .my-queries .ticket-status-label {
         flex-direction: column;
     }
 
-    .my-queries .chat-container{
+    .my-queries .chat-container {
         padding-bottom: 90px;
     }
 }
