@@ -14384,6 +14384,18 @@ a:hover {
   content: "";
 }
 
+.icon-call:before {
+  content: "";
+}
+
+.icon-sms:before {
+  content: "";
+}
+
+.icon-mail:before {
+  content: "";
+}
+
 nav.navbar .navbar-nav .dropdown .nav-link.dropdown-toggle {
   line-height: 1.2;
 }
