@@ -14259,6 +14259,18 @@ a:hover {
   content: "";
 }
 
+.icon-call:before {
+  content: "";
+}
+
+.icon-sms:before {
+  content: "";
+}
+
+.icon-mail:before {
+  content: "";
+}
+
 .cont-rght-side-fixed {
   width: 80% !important;
   height: 100%;
