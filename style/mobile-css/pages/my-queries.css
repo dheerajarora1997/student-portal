@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --brand-hue: 217;
   --brand-saturation: 74%;
@@ -127,6 +128,33 @@
   font-size: 28px;
   border-radius: 100%;
   background: rgba(255, 255, 255, 0.125);
+}
+
+.cs-input {
+  position: relative;
+}
+.cs-input input {
+  position: absolute;
+  z-index: -9999;
+}
+.cs-input label:before {
+  font: normal normal normal 16px/1 iconFont;
+  content: "";
+  color: #333333;
+}
+.cs-input input[type=radio] + label:before {
+  content: "";
+}
+.cs-input input[type=radio]:checked + label:before {
+  content: "";
+  color: var(--brand-primary);
+}
+.cs-input input[type=checkbox] + label:before {
+  content: "";
+}
+.cs-input input[type=checkbox]:checked + label:before {
+  content: "";
+  color: var(--brand-primary);
 }
 
 .my-queries .label-grid {
