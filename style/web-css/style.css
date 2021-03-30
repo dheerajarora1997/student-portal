@@ -14396,6 +14396,10 @@ a:hover {
   content: "";
 }
 
+.icon-faq:before {
+  content: "";
+}
+
 nav.navbar .navbar-nav .dropdown .nav-link.dropdown-toggle {
   line-height: 1.2;
 }
@@ -14497,6 +14501,11 @@ nav.navbar .navbar-nav .dropdown .nav-link.dropdown-toggle .bell-icon {
 .wrapper .sidebar ol li a span {
   font-size: 95%;
   font-weight: 400;
+}
+
+.wrapper:not(.active) .sidebar > ul {
+  overflow: hidden;
+  overflow-y: scroll;
 }
 
 input,

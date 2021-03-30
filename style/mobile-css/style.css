@@ -14277,6 +14277,10 @@ a:hover {
   content: "";
 }
 
+.icon-faq:before {
+  content: "";
+}
+
 .cont-rght-side-fixed {
   width: 60% !important;
   height: 100%;
