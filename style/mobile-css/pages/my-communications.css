@@ -129,6 +129,9 @@
   background: rgba(255, 255, 255, 0.125);
 }
 
+.communication-content {
+  min-height: 60vh;
+}
 .communication-content .communication-card {
   display: inline-block;
 }

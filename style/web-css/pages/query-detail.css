@@ -190,7 +190,7 @@
   padding: 15px 30px;
   margin: 0 auto;
   overflow-y: scroll;
-  padding-bottom: 60px;
+  padding-bottom: 85px;
 }
 .my-queries .ticket-description .ticket-conversation .chat-container ul {
   list-style-type: none;
@@ -244,6 +244,12 @@
 .my-queries .ticket-description .ticket-conversation .chat-area {
   z-index: 1;
   border-top: 1px solid #ececec !important;
+}
+.my-queries .ticket-description .ticket-conversation .chat-area .chat-file {
+  top: -26px;
+}
+.my-queries .ticket-description .ticket-conversation .chat-area .chat-file i {
+  font-size: 16px;
 }
 .my-queries .ticket-description .ticket-conversation .chat-area textarea {
   resize: none;

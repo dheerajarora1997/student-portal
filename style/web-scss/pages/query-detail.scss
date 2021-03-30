@@ -28,7 +28,7 @@
                 padding: 15px 30px;
                 margin: 0 auto;
                 overflow-y: scroll;
-                padding-bottom: 60px;
+                padding-bottom: 85px;
 
                 ul {
                     list-style-type: none;
@@ -96,6 +96,13 @@
             .chat-area {
                 z-index: 1;
                 border-top: 1px solid #ececec !important;
+
+                .chat-file{
+                    top: -26px;
+                    i{
+                        font-size: 16px;
+                    }
+                }
 
                 textarea {
                     resize: none;

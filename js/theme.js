@@ -2,7 +2,15 @@
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
     $('.selectpicker').selectpicker();
+    $('.owl-carousel').owlCarousel();
   });
+
+  function customFile() {
+    $('input[type="file"]').change(function(e){
+        var fileName = e. target. files[0]. name;
+        $(this).siblings('.form-control').val(fileName);
+    });
+  };
 
 $( document ).ready(function() {
 
@@ -25,21 +33,13 @@ $( document ).ready(function() {
         $(".main .card").removeClass("hover-effect");
       });
 
+      $( ".fileBrowseCustom label" ).on( "click", customFile );
+
+      setInterval(function(){
+      $('.full-page-spinner').addClass("d-none")
+      }, 2000);
+
 });
-
-
-function customFile() {
-  $('input[type="file"]').change(function(e){
-      var fileName = e. target. files[0]. name;
-      $(this).siblings('.form-control').val(fileName);
-  });
-}
-
-$( document ).ready(function() {
-  $( ".fileBrowseCustom label" ).on( "click", customFile );
-  $('.owl-carousel').owlCarousel();
-});
-
 
 $('.owl-carousel').owlCarousel({
   // loop: true,
@@ -72,11 +72,20 @@ $('.owl-carousel').owlCarousel({
   },
 });
 
-// Remove spinner after 2 sec
+function chatFile() {
+  $('input[type="file"]').change(function(e){
+      var fileName = e. target. files[0]. name;
+      $('.chat-file').removeClass('d-none');
+      $('.file-name').text(fileName);
+  });
+};
 
-$(document).ready(function(){
-  setInterval(function(){
-    $('.full-page-spinner').addClass("d-none")
-  }, 2000);
 
+$( document ).ready(function() {
+  $( ".chat-area label" ).on( "click", chatFile );
+  $( ".chat-area .remove-file" ).on( "click", function(){
+    $('.chat-file').addClass('d-none');
+    $('.chat-area input[type="file"]').val('');
+    $('.file-name').text('');
+  });
 });

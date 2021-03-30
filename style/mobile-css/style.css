@@ -14377,10 +14377,24 @@ a:hover {
   position: relative;
 }
 
+.power-section {
+  background: #f1f1f1;
+}
 .power-section i {
   font-size: 1rem;
 }
 
+@media only screen and (min-width: 767px) and (max-width: 1025px) {
+  .mobile-wrapper {
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+
+  .power-section {
+    margin-bottom: 70px;
+  }
+}
 header {
   background: #fff;
 }
@@ -14394,13 +14408,6 @@ header .query-icon {
 header .navbar-brand img {
   max-width: 120px;
   object-fit: contain;
-}
-
-.power-section {
-  position: fixed;
-  bottom: 57px;
-  right: 0;
-  width: 100%;
 }
 
 footer {

@@ -106,6 +106,21 @@
           hsl(var(--secondary-hue), var(--secondary-saturation), calc(var(--secondary-light) + 100%));
 }
 
+.welcome-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-panel {
+  min-height: 200px;
+}
+.welcome-panel i {
+  font-size: 28px;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.125);
+}
+
 .card {
   border-radius: 0.3rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
