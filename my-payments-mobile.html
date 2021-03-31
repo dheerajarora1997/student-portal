@@ -174,89 +174,105 @@
                     <h1 class="font-medium h4 mb-2">
                         My Payment
                     </h1>
-                    <div class="col-sm-12 col-md-11 col-lg-10 mx-auto">
-                        <p class="mb-0">All the payments that you have made John towards your admission process at
-                            <strong>{{CollegeName}}</strong> are listed below.
-                        </p>
+                    <p class="mb-0">All the payments that you have made John towards your admission process at
+                        <strong>{{CollegeName}}</strong> are listed below.
+                    </p>
+                    <div class="col-9 col-md-5 mx-auto">
+                        <a href="javascript:void(0);" data-toggle="modal"
+                                class="btn btn-light w-100 text-black raise-btn flex-center mt-4 mb-3 font-medium ">
+                                Raise Refund Request
+                            </a>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <div class="pt-3 px-3">
-                <a href="javascript:void(0);" data-toggle="modal"
-                    class="btn btn-outline-secondary w-100 text-black raise-btn flex-center">
-                    <i class="icon-payment mr-1" aria-hidden="true"></i>
-                    Raise Refund Request
-                </a>
-            </div>
-            <div class="label-grid pt-3 px-3">
-                <div class="d-block bg-light-danger text-center py-2 font-weight-light rounded-lg">
-                    <span class="h5 d-block mb-1">40</span>
-                    Total Payments
-                </div>
-                <div class="d-block bg-light-success text-center py-2 font-weight-light rounded-lg">
-                    <span class="h5 d-block mb-1">12</span>
-                    Pending Payments
-                </div>
-            </div>
-            <div class="queries-block d-block px-3 pt-3">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="content-header">
-                            <span class="d-block primary-color">Payment ID</span>
-                            <span class="d-block primary-color font-medium">XYZ12345678</span>
+            <div class="row no-gutters">
+                <!-- <div class="col-sm-12 col-md-4 col-lg-3">
+                    <div class="pt-3 px-3 h-100">
+                        <a href="javascript:void(0);" data-toggle="modal"
+                            class="btn btn-outline-secondary w-100 text-black raise-btn flex-center h-100">
+                            <i class="icon-payment mr-1" aria-hidden="true"></i>
+                            Raise Refund Request
+                        </a>
+                    </div>
+                </div> -->
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                    <div class="label-grid pt-3 px-3">
+                        <div class="d-block bg-light-danger text-center py-2 font-weight-light rounded-lg">
+                            <span class="h5 d-block mb-1">40</span>
+                            Total Payments
                         </div>
-                        <div class="content-des pt-3 pb-2">
-                            <div class="queries-grid">
-                                <div class="query-category">
-                                    <small class="text-muted">Payment Mode</small>
-                                    <span class="d-block font-medium">Online</span>
-                                </div>
-                                <div class="query-date">
-                                    <small class="text-muted">Date</small>
-                                    <span class="d-block font-medium">18 Apr, 2021</span>
-                                </div>
-                                <div class="query-status">
-                                    <small class="text-muted">Current Status</small>
-                                    Completed
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-action mb-2 mt-3">
-                            <div class="row justify-content-center align-items-center">
-                                <a href="javascript:void(0);" class="col-5 cs-btn">Download</a>
-                                <a href="javascript:void(0);" class="col-5 cs-btn">View</a>
-                            </div>
+                        <div class="d-block bg-light-success text-center py-2 font-weight-light rounded-lg">
+                            <span class="h5 d-block mb-1">12</span>
+                            Pending Payments
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="content-header">
-                            <span class="d-block primary-color">Payment ID</span>
-                            <span class="d-block primary-color font-medium">XYZ12345678</span>
-                        </div>
-                        <div class="content-des pt-3 pb-2">
-                            <div class="queries-grid">
-                                <div class="query-category">
-                                    <small class="text-muted">Payment Mode</small>
-                                    <span class="d-block font-medium">Online</span>
+            </div>
+            <div class="queries-block d-block px-3 pt-4">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="content-header">
+                                    <span class="d-block primary-color">Payment ID</span>
+                                    <span class="d-block primary-color font-medium">XYZ12345678</span>
                                 </div>
-                                <div class="query-date">
-                                    <small class="text-muted">Date</small>
-                                    <span class="d-block font-medium">17 Apr, 2021</span>
+                                <div class="content-des pt-3 pb-2">
+                                    <div class="queries-grid">
+                                        <div class="query-category">
+                                            <small class="text-muted">Payment Mode</small>
+                                            <span class="d-block font-medium">Online</span>
+                                        </div>
+                                        <div class="query-date">
+                                            <small class="text-muted">Date</small>
+                                            <span class="d-block font-medium">18 Apr, 2021</span>
+                                        </div>
+                                        <div class="query-status">
+                                            <small class="text-muted">Current Status</small>
+                                            Completed
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="query-status">
-                                    <small class="text-muted">Current Status</small>
-                                    Pending
+                                <div class="card-action mb-2 mt-3">
+                                    <div class="row justify-content-center align-items-center">
+                                        <a href="javascript:void(0);" class="col-5 cs-btn">Download</a>
+                                        <a href="javascript:void(0);" class="col-5 cs-btn">View</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card-action mb-2 mt-3">
-                            <div class="row justify-content-center align-items-center">
-                                <a href="javascript:void(0);" class="col-5 cs-btn">Download</a>
-                                <a href="javascript:void(0);" class="col-5 cs-btn">View</a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="content-header">
+                                    <span class="d-block primary-color">Payment ID</span>
+                                    <span class="d-block primary-color font-medium">XYZ12345678</span>
+                                </div>
+                                <div class="content-des pt-3 pb-2">
+                                    <div class="queries-grid">
+                                        <div class="query-category">
+                                            <small class="text-muted">Payment Mode</small>
+                                            <span class="d-block font-medium">Online</span>
+                                        </div>
+                                        <div class="query-date">
+                                            <small class="text-muted">Date</small>
+                                            <span class="d-block font-medium">17 Apr, 2021</span>
+                                        </div>
+                                        <div class="query-status">
+                                            <small class="text-muted">Current Status</small>
+                                            Pending
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-action mb-2 mt-3">
+                                    <div class="row justify-content-center align-items-center">
+                                        <a href="javascript:void(0);" class="col-5 cs-btn">Download</a>
+                                        <a href="javascript:void(0);" class="col-5 cs-btn">View</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

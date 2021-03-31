@@ -124,7 +124,8 @@
 .welcome-panel {
   min-height: 200px;
 }
-.welcome-panel i {
+.welcome-panel i[class^=icon-],
+.welcome-panel i[class^=-icon] {
   font-size: 28px;
   border-radius: 100%;
   background: rgba(255, 255, 255, 0.125);

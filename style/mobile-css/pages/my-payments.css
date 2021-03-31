@@ -123,7 +123,8 @@
 .welcome-panel {
   min-height: 200px;
 }
-.welcome-panel i {
+.welcome-panel i[class^=icon-],
+.welcome-panel i[class^=-icon] {
   font-size: 28px;
   border-radius: 100%;
   background: rgba(255, 255, 255, 0.125);
@@ -132,8 +133,11 @@
 .my-payments .label-grid {
   display: grid;
   row-gap: 1em;
-  column-gap: 0.8em;
+  column-gap: 2em;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.my-payments .queries-block {
+  min-height: 60vh;
 }
 .my-payments .queries-grid {
   font-size: 90%;
@@ -149,6 +153,14 @@
 @media only screen and (max-width: 359px) {
   .my-queries .card .card-body {
     padding: 1rem 0.8rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .my-payments .label-grid {
+    display: grid;
+    row-gap: 1em;
+    column-gap: 0.8em;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
