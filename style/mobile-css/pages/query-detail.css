@@ -255,6 +255,7 @@
 }
 .my-queries .chat-area {
   bottom: -1px;
+  z-index: 9;
   border-top: 1px solid #ececec !important;
 }
 .my-queries .chat-area .chat-file {
