@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="./style/mobile-css/style.css">
-    <link rel="stylesheet" href="./style/mobile-css/pages/my-payments.css">
+    <link rel="stylesheet" href="./style/mobile-css/pages/program-finder.css">
     <link rel="shortcut icon" type="image/jpg" href="./img/fav-icon.png" />
     <!-- <style>
         :root {
@@ -56,7 +56,7 @@
 </head>
 
 <body>
-    <div class="mobile-wrapper my-payments d-block">
+    <div class="mobile-wrapper program-finder d-block">
         <header>
             <div class="py-2 px-3">
                 <nav class="navbar align-items-center p-0">
@@ -174,7 +174,7 @@
                     <h1 class="font-medium h4 mb-2">
                         John, Welcome to Program Finder
                     </h1>
-                    <div class="col-sm-12 col-md-11 col-lg-8 pl-0 pr-md-4">
+                    <div class="col-sm-12 col-md-11 col-lg-10 mx-auto">
                         <p class="mb-0">You can search for and Apply to all the courses offered by
                             <strong>{{CollegeName}}</strong>.
                         </p>
@@ -184,128 +184,144 @@
         </section>
         <section>
             <div class="pt-3 px-3">
-                <form>
-                    <div class="floating-input">
-                        <input type="text" class="form-control" id="student-name" placeholder="Course*">
-                        <label for="student-name">Course <small class="text-danger">*</small></label>
-                        <small class="text-danger">Course is Required.</small>
-                    </div>
-                    <div class="floating-input">
-                        <input type="text" class="form-control" id="student-name" placeholder="Stream*">
-                        <label for="student-name">Stream <small class="text-danger">*</small></label>
-                    </div>
-                    <div class="mt-4">
-                        <a href="javascript:void(0);" class="w-100 m-0 d-inline-block cs-btn">
-                            <small class="icon-finder mr-1" aria-hidden="true"></small>
-                            Search
-                        </a>
-                    </div>
-                </form>
-
-            </div>
-            <div class="queries-block d-block px-3 pt-3">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="content-header">
-                            <span class="d-block primary-color">Form Name</span>
-                            <span class="d-block primary-color font-medium">XYZ12345678</span>
-                        </div>
-                        <div class="content-des pt-3 pb-2">
-                            <div class="queries-grid">
-                                <div class="query-category">
-                                    <small class="text-muted">Form Start Date</small>
-                                    <span class="d-block font-medium">Online</span>
-                                </div>
-                                <div class="query-date">
-                                    <small class="text-muted">Form End Date</small>
-                                    <span class="d-block font-medium">18 Apr, 2021</span>
-                                </div>
-                                <div class="query-status">
-                                    <small class="text-muted">Price</small>
-                                    <span class="d-block font-medium">Completed</span>
-                                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8">
+                        <form>
+                            <div class="floating-input">
+                                <input type="text" class="form-control" id="student-name" placeholder="Course*">
+                                <label for="student-name">Course <small class="text-danger">*</small></label>
+                                <small class="text-danger">Course is Required.</small>
                             </div>
-                            <div class="mt-3  query-des">
-                                <small class="text-muted">Description</small>
-                                <span class="d-block font-medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                            <div class="floating-input">
+                                <input type="text" class="form-control" id="student-name" placeholder="Stream*">
+                                <label for="student-name">Stream <small class="text-danger">*</small></label>
                             </div>
-                        </div>
-                        <div class="card-action mb-2 mt-2">
-                            <div class="row justify-content-center align-items-center">
-                                <a href="javascript:void(0);" class="w-100 cs-btn">Apply Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="content-header">
-                            <span class="d-block primary-color">Form Name</span>
-                            <span class="d-block primary-color font-medium">XYZ12345678</span>
-                        </div>
-                        <div class="content-des pt-3 pb-2">
-                            <div class="queries-grid">
-                                <div class="query-category">
-                                    <small class="text-muted">Form Start Date</small>
-                                    <span class="d-block font-medium">Online</span>
-                                </div>
-                                <div class="query-date">
-                                    <small class="text-muted">Form End Date</small>
-                                    <span class="d-block font-medium">18 Apr, 2021</span>
-                                </div>
-                                <div class="query-status">
-                                    <small class="text-muted">Price</small>
-                                    <span class="d-block font-medium">Completed</span>
-                                </div>
-                            </div>
-                            <div class="mt-3  query-des">
-                                <small class="text-muted">Description</small>
-                                <span class="d-block font-medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                            </div>
-                        </div>
-                        <div class="card-action mb-2 mt-2">
-                            <div class="row justify-content-center align-items-center">
-                                <a href="javascript:void(0);" class="w-100 cs-btn d-flex justify-content-center align-items-center">
-                                    Continue
-                                    <i class="icon-long-arrow ml-2 mt-1"></i>
+                            <div class="mt-4">
+                                <a href="javascript:void(0);" class="w-100 m-0 d-inline-block cs-btn">
+                                    <small class="icon-finder mr-1" aria-hidden="true"></small>
+                                    Search
                                 </a>
                             </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="queries-block d-block px-3 pt-3">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="content-header">
+                                    <span class="d-block primary-color">Form Name</span>
+                                    <span class="d-block primary-color font-medium">XYZ12345678</span>
+                                </div>
+                                <div class="content-des pt-3 pb-2">
+                                    <div class="queries-grid">
+                                        <div class="query-category">
+                                            <small class="text-muted">Form Start Date</small>
+                                            <span class="d-block font-medium">Online</span>
+                                        </div>
+                                        <div class="query-date">
+                                            <small class="text-muted">Form End Date</small>
+                                            <span class="d-block font-medium">18 Apr, 2021</span>
+                                        </div>
+                                        <div class="query-status">
+                                            <small class="text-muted">Price</small>
+                                            <span class="d-block font-medium">Completed</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3  query-des">
+                                        <small class="text-muted">Description</small>
+                                        <span class="d-block font-medium">Lorem Ipsum is simply dummy text of the
+                                            printing and typesetting industry.</span>
+                                    </div>
+                                </div>
+                                <div class="card-action mb-2 mt-2">
+                                    <div class="row justify-content-center align-items-center">
+                                        <a href="javascript:void(0);" class="w-100 cs-btn">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="content-header">
+                                    <span class="d-block primary-color">Form Name</span>
+                                    <span class="d-block primary-color font-medium">XYZ12345678</span>
+                                </div>
+                                <div class="content-des pt-3 pb-2">
+                                    <div class="queries-grid">
+                                        <div class="query-category">
+                                            <small class="text-muted">Form Start Date</small>
+                                            <span class="d-block font-medium">Online</span>
+                                        </div>
+                                        <div class="query-date">
+                                            <small class="text-muted">Form End Date</small>
+                                            <span class="d-block font-medium">18 Apr, 2021</span>
+                                        </div>
+                                        <div class="query-status">
+                                            <small class="text-muted">Price</small>
+                                            <span class="d-block font-medium">Completed</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3  query-des">
+                                        <small class="text-muted">Description</small>
+                                        <span class="d-block font-medium">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.</span>
+                                    </div>
+                                </div>
+                                <div class="card-action mb-2 mt-2">
+                                    <div class="row justify-content-center align-items-center">
+                                        <a href="javascript:void(0);"
+                                            class="w-100 cs-btn d-flex justify-content-center align-items-center">
+                                            Continue
+                                            <i class="icon-long-arrow ml-2 mt-1"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="content-header">
+                                    <span class="d-block primary-color">Form Name</span>
+                                    <span class="d-block primary-color font-medium">XYZ12345678</span>
+                                </div>
+                                <div class="content-des pt-3 pb-2">
+                                    <div class="queries-grid">
+                                        <div class="query-category">
+                                            <small class="text-muted">Form Start Date</small>
+                                            <span class="d-block font-medium">Online</span>
+                                        </div>
+                                        <div class="query-date">
+                                            <small class="text-muted">Form End Date</small>
+                                            <span class="d-block font-medium">18 Apr, 2021</span>
+                                        </div>
+                                        <div class="query-status">
+                                            <small class="text-muted">Price</small>
+                                            <span class="d-block font-medium">Completed</span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3  query-des">
+                                        <small class="text-muted">Description</small>
+                                        <span class="d-block font-medium">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting industry.</span>
+                                    </div>
+                                </div>
+                                <div class="card-action mb-2 mt-2">
+                                    <div class="row justify-content-center align-items-center">
+                                        <a href="javascript:void(0);" class="w-100 cs-btn">Apply Now</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="content-header">
-                            <span class="d-block primary-color">Form Name</span>
-                            <span class="d-block primary-color font-medium">XYZ12345678</span>
-                        </div>
-                        <div class="content-des pt-3 pb-2">
-                            <div class="queries-grid">
-                                <div class="query-category">
-                                    <small class="text-muted">Form Start Date</small>
-                                    <span class="d-block font-medium">Online</span>
-                                </div>
-                                <div class="query-date">
-                                    <small class="text-muted">Form End Date</small>
-                                    <span class="d-block font-medium">18 Apr, 2021</span>
-                                </div>
-                                <div class="query-status">
-                                    <small class="text-muted">Price</small>
-                                    <span class="d-block font-medium">Completed</span>
-                                </div>
-                            </div>
-                            <div class="mt-3  query-des">
-                                <small class="text-muted">Description</small>
-                                <span class="d-block font-medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-                            </div>
-                        </div>
-                        <div class="card-action mb-2 mt-2">
-                            <div class="row justify-content-center align-items-center">
-                                <a href="javascript:void(0);" class="w-100 cs-btn">Apply Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
 
             </div>
         </section>
@@ -319,10 +335,11 @@
             <nav>
                 <ul class="mb-0">
                     <li><a href="./my-queries-mobile.html" data-toggle="tooltip" data-placement="top"
-                            data-container="body" title="My Queries" ><i class="icon-queries p-3"></i></a>
+                            data-container="body" title="My Queries"><i class="icon-queries p-3"></i></a>
                     </li>
-                    <li><a href="./my-program-finder-mobile.html" data-toggle="tooltip" class="active" data-placement="top" data-container="body"
-                            title="Program Finder"><i class="icon-finder p-3"></i></a></li>
+                    <li><a href="./my-program-finder-mobile.html" data-toggle="tooltip" class="active"
+                            data-placement="top" data-container="body" title="Program Finder"><i
+                                class="icon-finder p-3"></i></a></li>
                     <li><a href="./mobile.html" data-toggle="tooltip" data-placement="top" data-container="body"
                             title="Dashboard"><i class="icon-dashboard p-3"></i></a></li>
                     <li><a href="./my-application-mobile.html" data-toggle="tooltip" data-placement="top"
@@ -346,8 +363,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="./my-program-finder-mobile.html" class="active primary-text-color py-2 px-3 d-block"><i
-                                    class="p-3 mr-2 icon-finder" aria-hidden="true"></i>
+                            <a href="./my-program-finder-mobile.html"
+                                class="active primary-text-color py-2 px-3 d-block"><i class="p-3 mr-2 icon-finder"
+                                    aria-hidden="true"></i>
                                 <span>Program Finder</span>
                             </a>
                             <ol class="program-list mb-3">

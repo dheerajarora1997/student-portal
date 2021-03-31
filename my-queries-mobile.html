@@ -174,7 +174,7 @@
                     <h1 class="font-medium h4 mb-2">
                         My Queries
                     </h1>
-                    <div class="col-sm-12 col-md-11 col-lg-8 pl-0 pr-md-4">
+                    <div class="col-sm-12 col-md-11 col-lg-10 mx-auto">
                         <p class="mb-0">John, all the queries that you've raised with regards to your admission at
                             <strong>{{CollegeName}}</strong> can be found below.
                         </p>
@@ -208,84 +208,132 @@
                     Closed
                 </div>
             </div>
-            <div class="queries-block d-block px-3 pt-3">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <div class="content-header">
-                            <a href="./query-detail-mobile.html" class="d-block primary-color">Ticket ID</a>
-                            <a href="./query-detail-mobile.html"
-                                class="d-block primary-color font-medium">XYZ12345678</a>
-                        </div>
-                        <div class="content-des pt-3">
-                            <div class="queries-grid">
-                                <div class="query-date">
-                                    <small class="text-muted">Date</small>
-                                    <span class="d-block font-medium">18 Apr, 2021</span>
+            <div class="queries-block d-block px-3 pt-4">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <div class="content-header">
+                                    <a href="./query-detail-mobile.html" class="d-block primary-color">Ticket ID</a>
+                                    <a href="./query-detail-mobile.html"
+                                        class="d-block primary-color font-medium">XYZ12345678</a>
                                 </div>
-                                <div class="query-category">
-                                    <small class="text-muted">Query Category</small>
-                                    <span class="d-block font-medium">Fee Payment</span>
+                                <div class="content-des pt-3">
+                                    <div class="queries-grid">
+                                        <div class="query-date">
+                                            <small class="text-muted">Date</small>
+                                            <span class="d-block font-medium">18 Apr, 2021</span>
+                                        </div>
+                                        <div class="query-category">
+                                            <small class="text-muted">Query Category</small>
+                                            <span class="d-block font-medium">Fee Payment</span>
+                                        </div>
+                                        <div class="query-status">
+                                            <small class="text-muted">Current Status</small>
+                                            <span class="d-block font-medium">
+                                                <i class="fa fa-circle text-light-success"></i>
+                                                In progress
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3  query-des">
+                                        <span class="text-muted">Description</span>
+                                        <span class="text-truncate-2 font-medium col-11 p-0">
+                                            John, all the queries that you're raised with regards to your admission at can be
+                                            John, all the queries that you're raised with regards to your admission at can be
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="query-status">
-                                    <small class="text-muted">Current Status</small>
-                                    <span class="d-block font-medium">
-                                        <i class="fa fa-circle text-light-success"></i>
-                                        In progress
-                                    </span>
+                                <div class="card-action mb-2 mt-3">
+                                    <div class="row justify-content-center align-items-center">
+                                        <a href="#feedback-modal" data-toggle="modal" class="col-5 cs-btn">Provide Feedback</a>
+                                        <a href="#confirmation-modal" data-toggle="modal" class="col-5 cs-btn">Re-Open Query</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="mt-3  query-des">
-                                <span class="text-muted">Description</span>
-                                <span class="text-truncate-2 font-medium col-11 p-0">
-                                    John, all the queries that you're raised with regards to your admission at can be
-                                    John, all the queries that you're raised with regards to your admission at can be
-                                </span>
-                            </div>
-                        </div>
-                        <div class="card-action mb-2 mt-3">
-                            <div class="row justify-content-center align-items-center">
-                                <a href="#feedback-modal" data-toggle="modal" class="col-5 cs-btn">Provide Feedback</a>
-                                <a href="#confirmation-modal" data-toggle="modal" class="col-5 cs-btn">Re-Open Query</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="content-header">
-                            <a href="./query-detail-mobile.html" class="d-block primary-color">Ticket ID</a>
-                            <a href="./query-detail-mobile.html"
-                                class="d-block primary-color font-medium">XYZ2345654</a>
-                        </div>
-                        <div class="content-des pt-3">
-                            <div class="queries-grid">
-                                <div class="query-date">
-                                    <small class="text-muted">Date</small>
-                                    <span class="d-block font-medium">13 Apr, 2021</span>
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="content-header">
+                                    <a href="./query-detail-mobile.html" class="d-block primary-color">Ticket ID</a>
+                                    <a href="./query-detail-mobile.html"
+                                        class="d-block primary-color font-medium">XYZ2345654</a>
                                 </div>
-                                <div class="query-category">
-                                    <small class="text-muted">Query Category</small>
-                                    <span class="d-block font-medium">Fee Payment</span>
+                                <div class="content-des pt-3">
+                                    <div class="queries-grid">
+                                        <div class="query-date">
+                                            <small class="text-muted">Date</small>
+                                            <span class="d-block font-medium">13 Apr, 2021</span>
+                                        </div>
+                                        <div class="query-category">
+                                            <small class="text-muted">Query Category</small>
+                                            <span class="d-block font-medium">Fee Payment</span>
+                                        </div>
+                                        <div class="query-status">
+                                            <small class="text-muted">Current Status</small>
+                                            <span class="d-block font-medium">
+                                                <i class="fa fa-circle text-light-danger"></i>
+                                                Closed
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 query-des">
+                                        <span class="text-muted">Description</span>
+                                        <span class="text-truncate-2 font-medium col-11 p-0">
+                                            John, all the queries that you're raised with regards to your admission at can be
+                                            John, all the queries that you're raised with regards to your admission at can be
+                                        </span>
+                                    </div>
                                 </div>
-                                <div class="query-status">
-                                    <small class="text-muted">Current Status</small>
-                                    <span class="d-block font-medium">
-                                        <i class="fa fa-circle text-light-danger"></i>
-                                        Closed
-                                    </span>
+                                <div class="card-action mb-2 mt-3">
+                                    <div class="row justify-content-center align-items-center">
+                                        <a href="#feedback-modal" data-toggle="modal" class="col-11 cs-btn">Provide Feedback</a>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="mt-3 query-des">
-                                <span class="text-muted">Description</span>
-                                <span class="text-truncate-2 font-medium col-11 p-0">
-                                    John, all the queries that you're raised with regards to your admission at can be
-                                    John, all the queries that you're raised with regards to your admission at can be
-                                </span>
-                            </div>
                         </div>
-                        <div class="card-action mb-2 mt-3">
-                            <div class="row justify-content-center align-items-center">
-                                <a href="#feedback-modal" data-toggle="modal" class="col-11 cs-btn">Provide Feedback</a>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="content-header">
+                                    <a href="./query-detail-mobile.html" class="d-block primary-color">Ticket ID</a>
+                                    <a href="./query-detail-mobile.html"
+                                        class="d-block primary-color font-medium">XYZ2345654</a>
+                                </div>
+                                <div class="content-des pt-3">
+                                    <div class="queries-grid">
+                                        <div class="query-date">
+                                            <small class="text-muted">Date</small>
+                                            <span class="d-block font-medium">13 Apr, 2021</span>
+                                        </div>
+                                        <div class="query-category">
+                                            <small class="text-muted">Query Category</small>
+                                            <span class="d-block font-medium">Fee Payment</span>
+                                        </div>
+                                        <div class="query-status">
+                                            <small class="text-muted">Current Status</small>
+                                            <span class="d-block font-medium">
+                                                <i class="fa fa-circle text-light-danger"></i>
+                                                Closed
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3 query-des">
+                                        <span class="text-muted">Description</span>
+                                        <span class="text-truncate-2 font-medium col-11 p-0">
+                                            John, all the queries that you're raised with regards to your admission at can be
+                                            John, all the queries that you're raised with regards to your admission at can be
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="card-action mb-2 mt-3">
+                                    <div class="row justify-content-center align-items-center">
+                                        <a href="#feedback-modal" data-toggle="modal" class="col-11 cs-btn">Provide Feedback</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
