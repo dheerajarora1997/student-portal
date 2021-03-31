@@ -62,9 +62,8 @@ body {
 
   &bg {
     background: var(--brand-secondary);
-    &-light{
-      background : $brand-light;
-
+    &:hover{
+      background: var(--brand-secondary);
     }
   }
 }

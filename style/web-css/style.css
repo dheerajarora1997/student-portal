@@ -11279,8 +11279,8 @@ h6 {
 .secondary-bg {
   background: var(--brand-secondary);
 }
-.secondary-bg-light {
-  background: hsl(var(--brand-hue), var(--brand-saturation), calc(var(--brand-light) + 1%));
+.secondary-bg:hover {
+  background: var(--brand-secondary);
 }
 
 .tertiary-color {
