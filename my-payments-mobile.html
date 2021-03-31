@@ -178,10 +178,10 @@
                         <strong>{{CollegeName}}</strong> are listed below.
                     </p>
                     <div class="col-9 col-md-5 mx-auto">
-                        <a href="javascript:void(0);" data-toggle="modal"
-                                class="btn btn-light w-100 text-black raise-btn flex-center mt-4 mb-3 font-medium ">
-                                Raise Refund Request
-                            </a>
+                        <a href="#refundModal" data-toggle="modal"
+                            class="btn btn-light w-100 text-black raise-btn flex-center mt-4 mb-3 font-medium ">
+                            Raise Refund Request
+                        </a>
                     </div>
                 </div>
             </div>
@@ -291,8 +291,8 @@
                     <li><a href="./my-queries-mobile.html" data-toggle="tooltip" data-placement="top"
                             data-container="body" title="My Queries"><i class="icon-queries p-3"></i></a>
                     </li>
-                    <li><a href="./my-program-finder-mobile.html" data-toggle="tooltip" data-placement="top" data-container="body"
-                            title="Program Finder"><i class="icon-finder p-3"></i></a></li>
+                    <li><a href="./my-program-finder-mobile.html" data-toggle="tooltip" data-placement="top"
+                            data-container="body" title="Program Finder"><i class="icon-finder p-3"></i></a></li>
                     <li><a href="./mobile.html" data-toggle="tooltip" data-placement="top" data-container="body"
                             title="Dashboard"><i class="icon-dashboard p-3"></i></a></li>
                     <li><a href="./my-application-mobile.html" data-toggle="tooltip" data-placement="top"
@@ -456,6 +456,48 @@
                             </form>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade refund-popup" id="refundModal" tabindex="-1" aria-labelledby="refundModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title font-medium" id="refundModalLabel">Raise Refund Request</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="fa fa-times" aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="relative mb-3">
+                            <label for="form-name">Select Form*</label>
+                            <select id="form-name" class="form-control selectpicker" data-live-search="true">
+                                <option value="">Form 1</option>
+                                <option value="">Form 2</option>
+                                <option value="">Form 3</option>
+                            </select>
+                        </div>
+                        <div class="relative mb-3">
+                            <label for="payment-cat">Fee Type *</label>
+                            <select id="payment-cat" class="selectpicker w-100" multiple>
+                                <option value="">Token Fee</option>
+                                <option value="">Exam Fee</option>
+                                <option value="">Preference Fee</option>
+                            </select>
+                        </div>
+                        <div class="form-group floating-input">
+                            <textarea type="text" class="form-control" id="reason" placeholder="Reason*"></textarea>
+                            <label for="reason">Reason*</label>
+                            <small class="text-danger">Reason is Required.</small>
+                        </div>
+                        <div class="my-2">
+                            <button data-dismiss="modal" class="btn primary-bg primary-text-color px-5 w-100">Send
+                                Request</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
