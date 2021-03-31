@@ -159,6 +159,9 @@
 .accordion .card {
   border-radius: 0 !important;
 }
+.accordion [data-toggle=collapse] {
+  padding-right: 18px;
+}
 .accordion [data-toggle=collapse]:after {
   font: normal normal normal 14px/1 FontAwesome;
   content: "";

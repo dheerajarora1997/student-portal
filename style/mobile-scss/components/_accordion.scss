@@ -3,6 +3,7 @@
         border-radius: 0 !important;
     }
     [data-toggle="collapse"] {
+        padding-right: 18px;
         &:after {
             font: $fa;
             content: "\f107";
