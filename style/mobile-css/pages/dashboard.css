@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "../../vendor/bootstrap-tour/bootstrap-tour-standalone.min.css";
 :root {
   --brand-hue: 217;
   --brand-saturation: 74%;

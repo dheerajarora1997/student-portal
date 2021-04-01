@@ -11049,6 +11049,16 @@ footer nav ul a, footer nav ul a:hover, header .hamburger-icon, .full-page-spinn
   box-shadow: 0 0 0 0.15rem #dc3545;
 }
 
+.popover .popover-navigation .btn:hover {
+  color: #fff;
+}
+.popover.right > .arrow {
+  left: -15px !important;
+}
+.popover.left > .arrow {
+  right: -16px !important;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -11134,19 +11144,19 @@ h6 {
 .primary-color {
   color: var(--brand-primary);
 }
-.primary-text-color {
+.primary-text-color, .popover .popover-title {
   color: var(--primary-text-color);
 }
-.primary-text-color:focus, .primary-text-color:hover, .primary-text-color:active {
+.primary-text-color:focus, .popover .popover-title:focus, .primary-text-color:hover, .popover .popover-title:hover, .primary-text-color:active, .popover .popover-title:active {
   color: var(--primary-text-color);
 }
-.primary-bg, .sidebar {
+.primary-bg, .sidebar, .popover .popover-title {
   background: var(--brand-primary);
 }
 .primary-bg-light {
   background: hsl(var(--brand-hue), var(--brand-saturation), calc(var(--brand-light) + 1%));
 }
-.primary-bg:hover, .sidebar:hover {
+.primary-bg:hover, .sidebar:hover, .popover .popover-title:hover {
   background: var(--brand-primary);
 }
 
