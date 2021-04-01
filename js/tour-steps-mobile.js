@@ -3,9 +3,14 @@ const tour = new Tour({
     backdrop: true,
     template: "<div class='popover tour mt-1'><div class='arrow'></div><h3 class='popover-title '></h3><div class='popover-content'></div><div class='popover-navigation'><button class='btn cs-btn mt-0 ml-0' data-role='prev'><i class='icon-long-arrow-left'></i></button><button class='btn cs-btn mt-0 ml-0' data-role='next'><i class='icon-long-arrow'></i></button><button class='btn btn-secondary' data-role='end'>Skip</button></div></div>",
     steps: [{
-            element: "#tour-element-1",
+            element: "#navbarNotification",
             title: "Notifications",
             content: "Recent Notification",
+            placement: "left"
+        }, {
+            element: "#tour-element-1",
+            title: "Ask any question",
+            content: "Ask any question",
             placement: "left"
         }, {
             element: "#tour-element-2",
@@ -28,15 +33,6 @@ const tour = new Tour({
             content: "List for all application",
             placement: "top"
         }, {
-            element: "#tour-element-6",
-            title: "My Communications",
-            content: "List for all application"
-        },
-        {
-            element: "#tour-element-7",
-            title: "My Payment",
-            content: "List for all application"
-        }, {
             element: "#lastFormCard",
             title: "Last Active Form",
             content: "List for all application",
@@ -46,24 +42,6 @@ const tour = new Tour({
             title: "My Applications",
             content: "List for all application",
             placement: "bottom"
-        },
-        {
-            element: "#programCard",
-            title: "My Program Finder",
-            content: "Find related program",
-            placement: "bottom"
-        },
-        {
-            element: "#queriesCard",
-            title: "My Queries",
-            content: "Any Questions",
-            placement: "top"
-        },
-        {
-            element: "#latestNotification",
-            title: "Latest Notifications",
-            content: "Any Questions",
-            placement: "top",
         },
         {
             element: "#sidebarTour",

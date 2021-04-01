@@ -11076,6 +11076,10 @@ select.selectpicker {
   box-shadow: 0 0 0 0.15rem #dc3545;
 }
 
+.fade {
+  opacity: 1;
+}
+
 .popover .popover-navigation .btn:hover {
   color: #fff;
 }

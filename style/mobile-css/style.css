@@ -11049,6 +11049,10 @@ footer nav ul a, footer nav ul a:hover, header .hamburger-icon, .full-page-spinn
   box-shadow: 0 0 0 0.15rem #dc3545;
 }
 
+.fade {
+  opacity: 1 !important;
+}
+
 .popover .popover-navigation .btn:hover {
   color: #fff;
 }

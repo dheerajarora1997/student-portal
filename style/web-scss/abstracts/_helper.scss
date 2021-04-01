@@ -126,6 +126,10 @@
   }
 }
 
+.fade{
+  opacity: 1;
+}
+
 .popover {
   .popover-title {
     @extend .primary-bg;
