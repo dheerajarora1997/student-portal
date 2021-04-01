@@ -145,4 +145,7 @@
   &.right>.arrow {
     left: -15px !important;
   }
+  &.left>.arrow{
+    right: -16px !important;
+  }
 }

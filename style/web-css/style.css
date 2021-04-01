@@ -11086,6 +11086,9 @@ select.selectpicker {
 .popover.right > .arrow {
   left: -15px !important;
 }
+.popover.left > .arrow {
+  right: -16px !important;
+}
 
 ::-webkit-scrollbar {
   width: 5px;

@@ -40,6 +40,12 @@ const tour = new Tour({
             element: "#tour-element-9",
             title: "Recent Activity",
             content: "List for all application"
+        },
+        {
+            element: "#tour-element-10",
+            title: "Ask Question",
+            content: "Drop a Question",
+            placement: "left",
         }, {
             element: "#lastFormCard",
             title: "Last Active Form",
@@ -73,7 +79,7 @@ const tour = new Tour({
 
 // Clear Local Storage for Bootstrap Tour
 
-// localStorage.clear();
+localStorage.clear();
 
 
 tour.init();
