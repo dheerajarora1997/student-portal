@@ -126,8 +126,16 @@
   }
 }
 
-.fade{
+.fade {
   opacity: 1;
+}
+
+.cont-rght-tour-element {
+  position: fixed;
+  top: 19%;
+  right: 0px;
+  width: 30px;
+  height: 110px;
 }
 
 .popover {
@@ -145,7 +153,8 @@
   &.right>.arrow {
     left: -15px !important;
   }
-  &.left>.arrow{
+
+  &.left>.arrow {
     right: -16px !important;
   }
 }

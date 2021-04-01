@@ -11080,6 +11080,14 @@ select.selectpicker {
   opacity: 1;
 }
 
+.cont-rght-tour-element {
+  position: fixed;
+  top: 19%;
+  right: 0px;
+  width: 30px;
+  height: 110px;
+}
+
 .popover .popover-navigation .btn:hover {
   color: #fff;
 }
