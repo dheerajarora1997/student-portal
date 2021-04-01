@@ -125,3 +125,20 @@
     box-shadow: 0 0 0 0.15rem $danger;
   }
 }
+
+.popover {
+  .popover-title {
+    @extend .primary-bg;
+    @extend .primary-text-color;
+  }
+
+  .popover-navigation {
+    .btn:hover {
+      color: #fff;
+    }
+  }
+
+  &.right>.arrow {
+    left: -15px !important;
+  }
+}
