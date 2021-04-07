@@ -158,6 +158,7 @@
   }
   .inner-tab .nav-tabs .nav-link {
     flex-wrap: nowrap;
+    white-space: nowrap;
   }
 }
 .inner-tab .tab-mob-wrap {
