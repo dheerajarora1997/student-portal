@@ -458,13 +458,9 @@
   right: -25px;
 }
 
-.notification-card {
-  height: 100%;
-}
-
-@media only screen and (min-width: 992px) and (max-width: 1025px) {
+@media only screen and (min-width: 992px) {
   .notification-card {
-    position: sticky;
+    position: sticky !important;
     top: 0;
     height: auto;
   }

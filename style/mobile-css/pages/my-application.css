@@ -205,6 +205,7 @@
   border-radius: 100%;
   padding: 0;
   position: relative;
+  border: 0;
   color: var(--brand-primary);
   background-color: hsl(var(--brand-hue), var(--brand-saturation), calc(var(--brand-light) + 45%));
 }
