@@ -308,7 +308,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-7">
-                                                <div class="card application-card border-0 my-application" id="applicationCard">
+                                                <div class="card application-card border-0 my-application"
+                                                    id="applicationCard">
                                                     <div class="card-body">
                                                         <div class="content-header">
                                                             <h3 class="h5 font-weight-bold mb-3">
@@ -596,7 +597,9 @@
                                 </form>
                                 <div class="query-response py-5">
                                     <h2 class="h6 font-medium">Dear Mr/Ms. {{Name}}</h2>
-                                    <p class="mb-4">We are in receipt of your query. Your query will be answered shortly. You may check the status of your query at <a class="primary-color" href="javascript:void(0);">My Queries</a></p>
+                                    <p class="mb-4">We are in receipt of your query. Your query will be answered
+                                        shortly. You may check the status of your query at <a class="primary-color"
+                                            href="javascript:void(0);">My Queries</a></p>
 
                                     <p class="mb-0 font-medium">Best wishes,</p>
                                     <p class="mb-0 font-medium">Acharya Institutes</p>
@@ -622,6 +625,11 @@
     <script src="./js/vendor/owl.carousel/dist/owl.carousel.js"></script>
     <script src="./js/vendor/bootstrap-select/js/bootstrap-select.js"></script>
     <script src="./js/theme.js"></script>
+    <script type="text/javascript">
+        if (screen.width <= 1023) {
+            document.location = "mobile.html";
+        }
+    </script>
 </body>
 
 </html>
