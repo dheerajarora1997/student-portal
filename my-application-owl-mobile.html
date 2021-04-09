@@ -883,7 +883,17 @@
     <script src="./js/vendor/bootstrap-js/bootstrap.min.js"></script>
     <script src="./js/vendor/owl.carousel/dist/owl.carousel.js"></script>
     <script src="./js/vendor/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="./js/vendor/jquery-bootstrap-scrolling-tabs/dist/jquery.scrolling-tabs.min.js"></script>
     <script src="./js/theme.js"></script>
+    <script>
+        $('.owl-tab-carousel').scrollingTabs({
+            bootstrapVersion: 4,
+            scrollToTabEdge: true,
+            cssClassLeftArrow: 'fa fa-angle-left',
+            cssClassRightArrow: 'fa fa-angle-right',
+            disableScrollArrowsOnFullyScrolled: true,
+        });
+    </script>
 </body>
 
 </html>

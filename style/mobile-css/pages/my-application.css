@@ -1,3 +1,4 @@
+@import '../../vendor/jquery-bootstrap-scrolling-tabs/dist/jquery.scrolling-tabs.min.css';
 :root {
   --brand-hue: 217;
   --brand-saturation: 74%;
@@ -52,7 +53,7 @@
           hsl(var(--secondary-hue), var(--secondary-saturation), calc(var(--secondary-light) + 100%));
 }
 
-.welcome-panel, .chat-btn {
+.scrtabs-tab-container .scrtabs-tab-scroll-arrow, .welcome-panel, .chat-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,6 +192,36 @@
 }
 .my-application .form-action {
   min-height: 100%;
+}
+
+.scrtabs-tab-container {
+  display: flex;
+  align-items: center;
+}
+.scrtabs-tab-container .scrtabs-tab-scroll-arrow {
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  padding: 0;
+  position: relative;
+  color: var(--brand-primary);
+  background-color: hsl(var(--brand-hue), var(--brand-saturation), calc(var(--brand-light) + 45%));
+}
+.scrtabs-tab-container .scrtabs-tab-scroll-arrow.hover {
+  color: var(--brand-primary);
+  background-color: hsl(var(--brand-hue), var(--brand-saturation), calc(var(--brand-light) + 45%));
+}
+.scrtabs-tab-container .scrtabs-tab-scroll-arrow.scrtabs-disable {
+  opacity: 0.5;
+  color: #666;
+  background-color: #f5f5f5;
+}
+.scrtabs-tab-container .scrtabs-tab-scroll-arrow.scrtabs-tab-scroll-arrow-left {
+  left: -6px;
+}
+.scrtabs-tab-container .scrtabs-tab-scroll-arrow.scrtabs-tab-scroll-arrow-right {
+  right: -6px;
 }
 
 /*# sourceMappingURL=my-application.css.map */
