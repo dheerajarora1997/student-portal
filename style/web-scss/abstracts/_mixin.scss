@@ -39,6 +39,14 @@
   text-overflow: ellipsis;
 }
 
+%text-truncate-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 %gray-scroll {
   &::-webkit-scrollbar {
     width: 4px;
